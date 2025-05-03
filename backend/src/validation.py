@@ -14,7 +14,7 @@ import pandas as pd
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 # Configuration
-RULES_PATH      = Path("../resources/ncci_rules.json")
+RULES_PATH      = Path("ncci_rules.json")
 COLLECTION_NAME = "ncci_rules"
 BATCH_SIZE      = 5000
 EMBED_BATCH     = 64
