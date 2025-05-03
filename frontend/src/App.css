@@ -1,0 +1,22 @@
+/* App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.left-column {
+  width: 50%;
+  border-right: 1px solid #d1d5db;
+  overflow-y: auto;
+}
+
+.right-column {
+  width: 50%;
+  overflow-y: auto;
+}
