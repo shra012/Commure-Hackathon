@@ -1,0 +1,1099 @@
+[
+  {
+    "claim_id": "49272",
+    "response_id": null,
+    "status": "unknown",
+    "outcome": "unknown",
+    "denied": false,
+    "denial_reasons": [],
+    "has_prior_auth": false,
+    "has_cob": false,
+    "procedure_codes": [
+      "162673000",
+      "140",
+      "43",
+      "430193006"
+    ],
+    "modifiers": [],
+    "diagnosis_codes": [],
+    "total_amount": 709.5,
+    "raw_claim": {
+      "resourceType": "Claim",
+      "id": "49272",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-10-18T20:20:56.872+00:00",
+        "source": "#ML8v9Ku1pGuXAhZr"
+      },
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+            "code": "institutional"
+          }
+        ]
+      },
+      "use": "claim",
+      "patient": {
+        "reference": "Patient/49006",
+        "display": "Val761 Larkin917"
+      },
+      "billablePeriod": {
+        "start": "2014-04-07T20:27:01-04:00",
+        "end": "2014-04-07T20:57:01-04:00"
+      },
+      "created": "2014-04-07T20:57:01-04:00",
+      "provider": {
+        "reference": "Organization/49045",
+        "display": "UMASS MEMORIAL MEDICAL GROUP, INC."
+      },
+      "priority": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+            "code": "normal"
+          }
+        ]
+      },
+      "supportingInfo": [
+        {
+          "sequence": 1,
+          "category": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+                "code": "info"
+              }
+            ]
+          },
+          "valueReference": {
+            "reference": "Immunization/49270"
+          }
+        },
+        {
+          "sequence": 2,
+          "category": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+                "code": "info"
+              }
+            ]
+          },
+          "valueReference": {
+            "reference": "Immunization/49271"
+          }
+        }
+      ],
+      "procedure": [
+        {
+          "sequence": 1,
+          "procedureReference": {
+            "reference": "Procedure/49265"
+          }
+        }
+      ],
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "display": "UnitedHealthcare"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/49258"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "informationSequence": [
+            1
+          ],
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "140",
+                "display": "Influenza, seasonal, injectable, preservative free"
+              }
+            ],
+            "text": "Influenza, seasonal, injectable, preservative free"
+          },
+          "net": {
+            "value": 140.52,
+            "currency": "USD"
+          }
+        },
+        {
+          "sequence": 3,
+          "informationSequence": [
+            2
+          ],
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "43",
+                "display": "Hep B, adult"
+              }
+            ],
+            "text": "Hep B, adult"
+          },
+          "net": {
+            "value": 140.52,
+            "currency": "USD"
+          }
+        },
+        {
+          "sequence": 4,
+          "procedureSequence": [
+            1
+          ],
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "430193006",
+                "display": "Medication Reconciliation (procedure)"
+              }
+            ],
+            "text": "Medication Reconciliation (procedure)"
+          },
+          "net": {
+            "value": 428.46,
+            "currency": "USD"
+          }
+        }
+      ],
+      "total": {
+        "value": 129.16,
+        "currency": "USD"
+      }
+    },
+    "raw_response": null
+  },
+  {
+    "claim_id": "49283",
+    "response_id": null,
+    "status": "unknown",
+    "outcome": "unknown",
+    "denied": false,
+    "denial_reasons": [],
+    "has_prior_auth": false,
+    "has_cob": false,
+    "procedure_codes": [
+      "162673000"
+    ],
+    "modifiers": [],
+    "diagnosis_codes": [],
+    "total_amount": 0.0,
+    "raw_claim": {
+      "resourceType": "Claim",
+      "id": "49283",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-10-18T20:20:56.872+00:00",
+        "source": "#ML8v9Ku1pGuXAhZr"
+      },
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+            "code": "pharmacy"
+          }
+        ]
+      },
+      "use": "claim",
+      "patient": {
+        "reference": "Patient/49006"
+      },
+      "billablePeriod": {
+        "start": "2015-04-13T20:27:01-04:00",
+        "end": "2015-04-13T20:57:01-04:00"
+      },
+      "created": "2015-04-13T20:57:01-04:00",
+      "provider": {
+        "reference": "Organization/49045",
+        "display": "UMASS MEMORIAL MEDICAL GROUP, INC."
+      },
+      "priority": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+            "code": "normal"
+          }
+        ]
+      },
+      "prescription": {
+        "reference": "MedicationRequest/49282"
+      },
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "display": "NO_INSURANCE"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/49274"
+            }
+          ]
+        }
+      ],
+      "total": {
+        "value": 26.21,
+        "currency": "USD"
+      }
+    },
+    "raw_response": null
+  },
+  {
+    "claim_id": "49285",
+    "response_id": null,
+    "status": "unknown",
+    "outcome": "unknown",
+    "denied": false,
+    "denial_reasons": [],
+    "has_prior_auth": false,
+    "has_cob": false,
+    "procedure_codes": [
+      "162673000"
+    ],
+    "modifiers": [],
+    "diagnosis_codes": [],
+    "total_amount": 0.0,
+    "raw_claim": {
+      "resourceType": "Claim",
+      "id": "49285",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-10-18T20:20:56.872+00:00",
+        "source": "#ML8v9Ku1pGuXAhZr"
+      },
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+            "code": "pharmacy"
+          }
+        ]
+      },
+      "use": "claim",
+      "patient": {
+        "reference": "Patient/49006"
+      },
+      "billablePeriod": {
+        "start": "2015-04-13T20:27:01-04:00",
+        "end": "2015-04-13T20:57:01-04:00"
+      },
+      "created": "2015-04-13T20:57:01-04:00",
+      "provider": {
+        "reference": "Organization/49045",
+        "display": "UMASS MEMORIAL MEDICAL GROUP, INC."
+      },
+      "priority": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+            "code": "normal"
+          }
+        ]
+      },
+      "prescription": {
+        "reference": "MedicationRequest/49284"
+      },
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "display": "NO_INSURANCE"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/49274"
+            }
+          ]
+        }
+      ],
+      "total": {
+        "value": 171.32,
+        "currency": "USD"
+      }
+    },
+    "raw_response": null
+  },
+  {
+    "claim_id": "49287",
+    "response_id": null,
+    "status": "unknown",
+    "outcome": "unknown",
+    "denied": false,
+    "denial_reasons": [],
+    "has_prior_auth": false,
+    "has_cob": false,
+    "procedure_codes": [
+      "162673000",
+      "140",
+      "430193006"
+    ],
+    "modifiers": [],
+    "diagnosis_codes": [],
+    "total_amount": 626.78,
+    "raw_claim": {
+      "resourceType": "Claim",
+      "id": "49287",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-10-18T20:20:56.872+00:00",
+        "source": "#ML8v9Ku1pGuXAhZr"
+      },
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+            "code": "institutional"
+          }
+        ]
+      },
+      "use": "claim",
+      "patient": {
+        "reference": "Patient/49006",
+        "display": "Val761 Larkin917"
+      },
+      "billablePeriod": {
+        "start": "2015-04-13T20:27:01-04:00",
+        "end": "2015-04-13T20:57:01-04:00"
+      },
+      "created": "2015-04-13T20:57:01-04:00",
+      "provider": {
+        "reference": "Organization/49045",
+        "display": "UMASS MEMORIAL MEDICAL GROUP, INC."
+      },
+      "priority": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+            "code": "normal"
+          }
+        ]
+      },
+      "supportingInfo": [
+        {
+          "sequence": 1,
+          "category": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+                "code": "info"
+              }
+            ]
+          },
+          "valueReference": {
+            "reference": "Immunization/49286"
+          }
+        }
+      ],
+      "procedure": [
+        {
+          "sequence": 1,
+          "procedureReference": {
+            "reference": "Procedure/49281"
+          }
+        }
+      ],
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "display": "UnitedHealthcare"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/49274"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "informationSequence": [
+            1
+          ],
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "140",
+                "display": "Influenza, seasonal, injectable, preservative free"
+              }
+            ],
+            "text": "Influenza, seasonal, injectable, preservative free"
+          },
+          "net": {
+            "value": 140.52,
+            "currency": "USD"
+          }
+        },
+        {
+          "sequence": 3,
+          "procedureSequence": [
+            1
+          ],
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "430193006",
+                "display": "Medication Reconciliation (procedure)"
+              }
+            ],
+            "text": "Medication Reconciliation (procedure)"
+          },
+          "net": {
+            "value": 486.26,
+            "currency": "USD"
+          }
+        }
+      ],
+      "total": {
+        "value": 129.16,
+        "currency": "USD"
+      }
+    },
+    "raw_response": null
+  },
+  {
+    "claim_id": "49426",
+    "response_id": null,
+    "status": "unknown",
+    "outcome": "unknown",
+    "denied": false,
+    "denial_reasons": [],
+    "has_prior_auth": false,
+    "has_cob": false,
+    "procedure_codes": [
+      "185345009"
+    ],
+    "modifiers": [],
+    "diagnosis_codes": [],
+    "total_amount": 0.0,
+    "raw_claim": {
+      "resourceType": "Claim",
+      "id": "49426",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-10-18T20:20:56.872+00:00",
+        "source": "#ML8v9Ku1pGuXAhZr"
+      },
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+            "code": "pharmacy"
+          }
+        ]
+      },
+      "use": "claim",
+      "patient": {
+        "reference": "Patient/49006"
+      },
+      "billablePeriod": {
+        "start": "2019-07-25T20:27:01-04:00",
+        "end": "2019-07-25T20:52:01-04:00"
+      },
+      "created": "2019-07-25T20:52:01-04:00",
+      "provider": {
+        "reference": "Organization/49007",
+        "display": "NASHOBA VALLEY MEDICAL CENTER"
+      },
+      "priority": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+            "code": "normal"
+          }
+        ]
+      },
+      "prescription": {
+        "reference": "MedicationRequest/49425"
+      },
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "display": "NO_INSURANCE"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185345009",
+                "display": "Encounter for symptom"
+              }
+            ],
+            "text": "Encounter for symptom"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/49422"
+            }
+          ]
+        }
+      ],
+      "total": {
+        "value": 5.69,
+        "currency": "USD"
+      }
+    },
+    "raw_response": null
+  },
+  {
+    "claim_id": "49429",
+    "response_id": null,
+    "status": "unknown",
+    "outcome": "unknown",
+    "denied": false,
+    "denial_reasons": [],
+    "has_prior_auth": false,
+    "has_cob": false,
+    "procedure_codes": [
+      "185345009",
+      "10509002",
+      "269911007"
+    ],
+    "modifiers": [],
+    "diagnosis_codes": [],
+    "total_amount": 10939.32,
+    "raw_claim": {
+      "resourceType": "Claim",
+      "id": "49429",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-10-18T20:20:56.872+00:00",
+        "source": "#ML8v9Ku1pGuXAhZr"
+      },
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+            "code": "institutional"
+          }
+        ]
+      },
+      "use": "claim",
+      "patient": {
+        "reference": "Patient/49006",
+        "display": "Val761 Larkin917"
+      },
+      "billablePeriod": {
+        "start": "2019-07-25T20:27:01-04:00",
+        "end": "2019-07-25T20:52:01-04:00"
+      },
+      "created": "2019-07-25T20:52:01-04:00",
+      "provider": {
+        "reference": "Organization/49007",
+        "display": "NASHOBA VALLEY MEDICAL CENTER"
+      },
+      "priority": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+            "code": "normal"
+          }
+        ]
+      },
+      "diagnosis": [
+        {
+          "sequence": 1,
+          "diagnosisReference": {
+            "reference": "Condition/49423"
+          }
+        }
+      ],
+      "procedure": [
+        {
+          "sequence": 1,
+          "procedureReference": {
+            "reference": "Procedure/49424"
+          }
+        }
+      ],
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "display": "UnitedHealthcare"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185345009",
+                "display": "Encounter for symptom"
+              }
+            ],
+            "text": "Encounter for symptom"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/49422"
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "diagnosisSequence": [
+            1
+          ],
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "10509002",
+                "display": "Acute bronchitis (disorder)"
+              }
+            ],
+            "text": "Acute bronchitis (disorder)"
+          }
+        },
+        {
+          "sequence": 3,
+          "procedureSequence": [
+            1
+          ],
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "269911007",
+                "display": "Sputum examination (procedure)"
+              }
+            ],
+            "text": "Sputum examination (procedure)"
+          },
+          "net": {
+            "value": 10939.32,
+            "currency": "USD"
+          }
+        }
+      ],
+      "total": {
+        "value": 129.16,
+        "currency": "USD"
+      }
+    },
+    "raw_response": null
+  },
+  {
+    "claim_id": "141013",
+    "response_id": null,
+    "status": "unknown",
+    "outcome": "unknown",
+    "denied": false,
+    "denial_reasons": [],
+    "has_prior_auth": false,
+    "has_cob": false,
+    "procedure_codes": [
+      "4"
+    ],
+    "modifiers": [],
+    "diagnosis_codes": [
+      "clinical"
+    ],
+    "total_amount": 0.0,
+    "raw_claim": {
+      "resourceType": "Claim",
+      "id": "141013",
+      "meta": {
+        "versionId": "1",
+        "lastUpdated": "2019-12-02T05:44:33.578+00:00",
+        "source": "#lCXsw2zdxfZ7e1xG"
+      },
+      "contained": [
+        {
+          "resourceType": "Practitioner",
+          "id": "2",
+          "identifier": [
+            {
+              "system": "http://acme.org/MRNs",
+              "value": "54321"
+            }
+          ],
+          "name": [
+            {
+              "family": "ezziddine",
+              "given": [
+                "mohammad",
+                "bakir"
+              ]
+            },
+            {
+              "family": "john",
+              "given": [
+                "abc",
+                "def"
+              ]
+            },
+            {
+              "family": "john",
+              "given": [
+                "abc",
+                "def"
+              ]
+            }
+          ],
+          "gender": "male",
+          "qualification": [
+            {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+                    "code": "doctor",
+                    "display": "Doctor"
+                  }
+                ]
+              }
+            }
+          ],
+          "communication": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+                  "code": "ict",
+                  "display": "ICT professional"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "resourceType": "Patient",
+          "id": "1",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">\u0645\u062d\u0645\u062f \u062e\u0644\u064a\u0644 <b>\u062d\u0633\u0646 </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>12345</td></tr></tbody></table></div>"
+          },
+          "identifier": [
+            {
+              "system": "http://acme.org/MRNs",
+              "value": "12345"
+            }
+          ],
+          "name": [
+            {
+              "family": "\u062d\u0633\u0646",
+              "given": [
+                "\u0645\u062d\u0645\u062f",
+                "\u062e\u0644\u064a\u0644"
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "(00961)(03)123456",
+              "use": "home"
+            }
+          ],
+          "gender": "male",
+          "generalPractitioner": [
+            {
+              "reference": "#2"
+            }
+          ]
+        },
+        {
+          "resourceType": "Person",
+          "id": "3"
+        },
+        {
+          "resourceType": "Organization",
+          "id": "4",
+          "name": "organization-1",
+          "alias": [
+            "org-1"
+          ]
+        },
+        {
+          "resourceType": "Organization",
+          "id": "5",
+          "name": "daar",
+          "alias": [
+            "eldaar"
+          ]
+        },
+        {
+          "resourceType": "Medication",
+          "id": "6",
+          "text": {
+            "status": "generated"
+          },
+          "ingredient": [
+            {
+              "itemCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/ValueSet/medication-codes",
+                    "code": "clinical",
+                    "display": "Clinical Diagnosis"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "resourceType": "Location",
+          "id": "7",
+          "name": "daar-el-h",
+          "alias": [
+            "daar-h"
+          ],
+          "type": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+                  "code": "HRAD",
+                  "display": "radiology unit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "resourceType": "Organization",
+          "id": "8",
+          "name": "org",
+          "alias": [
+            "organization"
+          ]
+        },
+        {
+          "resourceType": "Location",
+          "id": "9",
+          "type": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "bu",
+                  "display": "Building"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+            "code": "institutional",
+            "display": "institutional"
+          }
+        ]
+      },
+      "subType": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/ex-claimsubtype",
+            "code": "emergency",
+            "display": "Emergency Claim"
+          }
+        ]
+      },
+      "use": "claim",
+      "patient": {
+        "reference": "#1"
+      },
+      "billablePeriod": {
+        "start": "2019-12-02T07:41:03+02:00",
+        "end": "2019-12-02T07:41:04+02:00"
+      },
+      "enterer": {
+        "reference": "#3"
+      },
+      "insurer": {
+        "reference": "#4"
+      },
+      "provider": {
+        "reference": "#5"
+      },
+      "priority": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ValueSet/process-priority",
+            "code": "normal",
+            "display": "Normal"
+          }
+        ]
+      },
+      "prescription": {
+        "reference": "#6"
+      },
+      "payee": {
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ex-payee-resource-type",
+              "code": "patient",
+              "display": "\tPatient"
+            }
+          ]
+        }
+      },
+      "facility": {
+        "reference": "#7"
+      },
+      "careTeam": [
+        {
+          "sequence": 1,
+          "provider": {
+            "reference": "#8"
+          }
+        }
+      ],
+      "diagnosis": [
+        {
+          "sequence": 1,
+          "diagnosisCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+                "code": "clinical",
+                "display": "Clinical Diagnosis"
+              }
+            ]
+          }
+        }
+      ],
+      "procedure": [
+        {
+          "sequence": 1
+        }
+      ],
+      "accident": {
+        "date": "2019-12-02",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/ValueSet/v3-ActIncidentCode",
+              "code": "WPA",
+              "display": "\tWorkplace accident"
+            }
+          ]
+        },
+        "locationReference": {
+          "reference": "#9"
+        }
+      },
+      "item": [
+        {
+          "sequence": 1,
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/ex-benefitcategory",
+                "code": "4",
+                "display": "Diagnostic XRay"
+              }
+            ]
+          },
+          "factor": 0.8
+        }
+      ],
+      "total": {
+        "value": 30000,
+        "currency": "LBP"
+      }
+    },
+    "raw_response": null
+  }
+]
+  
