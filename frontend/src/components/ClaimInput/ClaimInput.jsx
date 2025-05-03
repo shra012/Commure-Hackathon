@@ -45,7 +45,6 @@ const ClaimInput = () => {
           <TestValidationButton />
         </div>
       </div>
-      <ClaimTableDisplay/>
     </div>
   );
 };

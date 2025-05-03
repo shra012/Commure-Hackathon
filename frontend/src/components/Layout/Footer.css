@@ -1,13 +1,18 @@
-
 .footer {
-  background: #1e3a8a;
+  width: 100vw;
+  /* Full viewport width */
   background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
   color: #fff;
   padding: 2rem 0;
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  left: 0;
 }
 
 .footer__container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;

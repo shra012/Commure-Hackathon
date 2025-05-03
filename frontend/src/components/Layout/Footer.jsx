@@ -7,7 +7,9 @@ const Footer = () => (
     <div className="footer__container">
       <div className="footer__top">
         <div className="footer__brand">
-          <span className="footer__brand-name">Claims Guardian</span>
+          <span className="footer__brand-name">
+            Claims Guardian
+          </span>
         </div>
         <div className="footer__links">
           <a
@@ -24,17 +26,18 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             className="footer__link"
-          >
-            <span>HealthClaim</span>
-          </a>
+          ></a>
         </div>
       </div>
       <div className="footer__bottom">
         <p className="footer__text">
-          Designed for efficient medical claims processing and validation
+          AI-powered pre-check engine that catches
+          claim denials before they happen. 
+          Built for speed, Built for payback.
         </p>
         <p className="footer__copyright">
-          &copy; {new Date().getFullYear()} Claims Guardian. All rights reserved.
+          &copy; {new Date().getFullYear()}{' '}
+          ClaimsGuard.Ai . All rights reserved.
         </p>
       </div>
     </div>
