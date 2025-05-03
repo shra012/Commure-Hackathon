@@ -4,7 +4,7 @@ import './Header.css';
 
 const Header = () => (
   <header className="header">
-    <div className="header__wrapper">
+    <div className="header__content">
       <FaShieldAlt className="header__logo" />
       <span className="header__title">
         ClaimsGuard.Ai
