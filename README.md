@@ -54,14 +54,14 @@ The application communicates with a backend validation service via RESTful API e
 ### Prerequisites
 
 - Node.js (v14+)
-- npm or yarn
+- npm
 - Internet connection for API access
 
 ### Installation Steps
 
 1. Clone the repository
    ```
-   git clone https://github.com/your-org/medclaim-validation.git
+   git clone https://github.com/shra012/Commure-Hackathon.git
    cd medclaim-validation
    ```
 
@@ -70,9 +70,6 @@ The application communicates with a backend validation service via RESTful API e
    npm install
    ```
    or
-   ```
-   yarn install
-   ```
 
 3. Configure API endpoint (if needed)
    - Open `src/utils/api.js`
@@ -81,10 +78,6 @@ The application communicates with a backend validation service via RESTful API e
 4. Start the development server
    ```
    npm start
-   ```
-   or
-   ```
-   yarn start
    ```
 
 5. Access the application
@@ -132,17 +125,156 @@ After validation, the system will display results indicating whether each claim 
    - Check browser console for errors
    - Verify the format of your claim data matches API expectations
 
-## Contributing
+# Backend
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/new-feature`
-3. Commit your changes: `git commit -m 'Add new feature'`
-4. Push to the branch: `git push origin feature/new-feature`
-5. Submit a pull request
+A **FastAPI** service for validating CPT/NCCI code pairings in healthcare claims using:
 
-## License
+- **ChromaDB** + vector embeddings for “pair‑to‑pair” rule lookup  
+- One‑time duplication checks (patient has already billed a HCPCS code)  
+- **Groq AI** for generating concise, factual summaries of violations  
 
-[MIT License](LICENSE)
+---
+
+## 📦 Project Structure
+
+```
+backend/
+├── Dockerfile
+├── requirements.txt
+├── start.sh
+├── claim_history.json      ← past‑claims lookup  
+├── ncci_rules.json         ← NCCI/PTP rule definitions  
+├── sample_claim.json       ← example claim payload  
+└── src/
+    ├── datastore.py        ← load rules, embeddings, ChromaDB interface  
+    ├── rule_validation.py  ← ValidationRule classes & orchestrator  
+    ├── genai.py            ← Groq AI summarization logic  
+    └── main.py             ← FastAPI app & routing  
+```
+
+---
+
+## 🛠️ Prerequisites
+
+- Python 3.11+  
+- Docker & Docker Compose (optional, for containerized deployment)  
+- (Optional) GPU with CUDA for faster embedding generation  
+
+---
+
+## 🚀 Quickstart
+
+### 1. Build & run with Docker
+
+```bash
+# Build the backend image
+docker build -t commure-backend:latest .
+
+# Run container, map port 8000 inside → 8000 on host
+docker run -d   --name commure-backend   -p 8000:8000   commure-backend:latest
+```
+
+> **Visit**:  
+> - Swagger UI → http://localhost:8000/docs  
+> - Health check → http://localhost:8000/
+
+### 2. Local development
+
+```bash
+# 1. Create & activate virtual environment
+python -m venv .venv
+source .venv/bin/activate
+
+# 2. Install dependencies
+pip install --no-cache-dir -r requirements.txt
+
+# 3. Run the app with auto‑reload
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
+---
+
+## 🔌 API Endpoints
+
+| Method | Path                 | Description                               |
+| ------ | -------------------- | ----------------------------------------- |
+| POST   | `/validate/single`   | Validate one claim; returns summary & pass/fail flag |
+| POST   | `/validate/batch`    | Validate multiple claims in one request   |
+| GET    | `/claim/{claim_id}`  | Retrieve a stored sample claim by ID      |
+| GET    | `/claims`            | Retrieve all stored sample claims         |
+
+### Request & Response Shapes
+
+**`POST /validate/single`**  
+```jsonc
+// Request body
+{
+  "claim_id": "C1",
+  "codes": ["0001A", "0591T"],
+  "modifier": "1",
+  "patient": { "reference": "Patient/PT123" }
+}
+
+// Response body
+{
+  "claim_id": "C1",
+  "approved": false,
+  "results": [ /* array of pairwise + single‑rule checks */ ],
+  "summary": "Short AI‑generated summary of any ❌ violations."
+}
+```
+
+**`POST /validate/batch`**  
+```jsonc
+// Request body
+[
+  { "claim_id": "C1", "codes": [...], "modifier": "LT", "patient": {...} },
+  { "claim_id": "C2", "codes": [...], "modifier": null, "patient": {...} }
+]
+
+// Response body
+{
+  "claims": [
+    {
+      "claim_id": "C1",
+      "approved": true,
+      "results": [ … ],
+      "summary": "No billing violations detected."
+    },
+    {
+      "claim_id": "C2",
+      "approved": false,
+      "results": [ … ],
+      "summary": "❌ Modifier missing for CPT …"
+    }
+  ]
+}
+```
+
+---
+
+## ⚙️ Configuration
+
+- **`ncci_rules.json`**: PTP rule set ingested into ChromaDB  
+- **`claim_history.json`**: Past claims, indexed by `patient.reference` → list of `hcpcs_code` for duplication checks  
+- **Groq AI**: API key in `genai.py` (or set via `GROQ_API_KEY` env var)  
+
+---
+
+## 💡 How It Works
+
+1. **Startup**  
+   - Load NCCI/PTP rules → embed texts via **SentenceTransformer** → ingest into **ChromaDB**  
+   - Load claim history JSON → map `patient.reference` to list of `hcpcs_code`  
+
+2. **Validation**  
+   - **Pairwise**: for every unique pair of CPT codes in a claim, query ChromaDB → find exact match → apply modifier rules → flag ❌ or ✅  
+   - **Single‑code**: apply one‑time duplication rule (`has_prior_claim`) → flag if HCPCS re‑billed for same patient  
+
+3. **Summary**  
+   - Collect all ❌ violations → send bullet list + prompt to **Groq AI** → return concise, factual summary  
+
+---
 
 ## Contact
 - Product Lead  - Shreyas durairajalu - Shreyasdurairajalu@gmail.com
