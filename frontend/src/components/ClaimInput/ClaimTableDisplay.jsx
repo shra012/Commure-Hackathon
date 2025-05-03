@@ -1,6 +1,4 @@
-// src/components/ClaimInput/ClaimTableDisplay.jsx
 import '../../index.css';
-
 import React, { useState } from 'react';
 import {
   useSelector,
@@ -15,21 +13,9 @@ import api from '../../utils/api';
 const ClaimTableDisplay = () => {
   const { parsedClaims, parseError } =
     useSelector((state) => state.claims);
-  const [expandedClaims, setExpandedClaims] =
-    useState({});
   const [isSubmitting, setIsSubmitting] =
     useState(false);
   const dispatch = useDispatch();
-
-  const toggleClaimExpanded = (claimId) => {
-    setExpandedClaims((prev) => ({
-      ...prev,
-      [claimId]: !prev[claimId],
-    }));
-  };
-
-  const isClaimExpanded = (claimId) =>
-    !!expandedClaims[claimId];
 
   const formatModifiers = (modifiers) => {
     if (typeof modifiers === 'string')
@@ -46,119 +32,66 @@ const ClaimTableDisplay = () => {
 
   const handleClearTable = () => {
     dispatch(clearClaims());
-    setExpandedClaims({});
   };
 
   const handleSubmitClaim = async (claim) => {
     try {
       setIsSubmitting(true);
-      // Format the data for the single claim API
-      const singleClaimData = {
+      const data = {
         claim_id: claim.claimId,
         codes: claim.procedureCodes,
-        modifier:
-          typeof claim.modifiers === 'string'
-            ? claim.modifiers
-            : Array.isArray(claim.modifiers) &&
-              claim.modifiers.length > 0
-            ? claim.modifiers[0]
-            : '0',
+        modifier: formatModifiers(
+          claim.modifiers
+        ),
       };
 
-      console.log(
-        'Submitting single claim:',
-        singleClaimData
-      );
-
-      // Use validateSingleClaim for individual submissions
       const result =
-        await api.validateSingleClaim(
-          singleClaimData
-        );
-      console.log(
-        'Single claim validation result:',
-        result
-      );
-
-      // Update the Redux store with the validation results
+        await api.validateSingleClaim(data);
       dispatch(setValidationResults(result));
-
       setIsSubmitting(false);
       alert(
         `Claim ${claim.claimId} submitted successfully!`
       );
     } catch (error) {
-      console.error(
-        'Error submitting claim:',
-        error
+      console.error('Submit error:', error);
+      alert(
+        `Error submitting claim: ${error.message}`
       );
       setIsSubmitting(false);
-      alert(
-        `Error submitting claim: ${
-          error.message || 'Unknown error'
-        }`
-      );
     }
   };
 
   const handleSubmitAllClaims = async () => {
-    if (
-      !parsedClaims ||
-      parsedClaims.length === 0
-    ) {
-      alert('No claims to submit.');
-      return;
-    }
-
     try {
       setIsSubmitting(true);
-      const apiData = parsedClaims.map(
+      const formatted = parsedClaims.map(
         (claim) => ({
           claim_id: claim.claimId,
           codes: claim.procedureCodes,
-          modifier:
-            typeof claim.modifiers === 'string'
-              ? claim.modifiers
-              : Array.isArray(claim.modifiers) &&
-                claim.modifiers.length > 0
-              ? claim.modifiers[0]
-              : '0',
+          modifier: formatModifiers(
+            claim.modifiers
+          ),
         })
       );
 
-      console.log(
-        'Submitting batch claims:',
-        apiData
-      );
-
-      // Continue using validateClaims for batch submissions
       const result = await api.validateClaims(
-        apiData
+        formatted
       );
-      console.log(
-        'Batch claims validation result:',
-        result
-      );
-
-      // Update the Redux store with the validation results
       dispatch(setValidationResults(result));
-
       setIsSubmitting(false);
       alert('All claims submitted successfully!');
     } catch (error) {
-      console.error('Submit all failed:', error);
-      setIsSubmitting(false);
+      console.error('Batch submit error:', error);
       alert(
-        `Error submitting claims: ${
-          error.message || 'Unknown error'
-        }`
+        `Error submitting claims: ${error.message}`
       );
+      setIsSubmitting(false);
     }
   };
 
   if (parseError) {
     return (
-      <div className="mt-4 p-4 bg-red-100 border border-red-300 rounded">
+      <div className="p-4 bg-red-100 border border-red-300 rounded">
         <p className="text-red-700 font-semibold">
           Error Parsing Claims
         </p>
@@ -179,214 +112,112 @@ const ClaimTableDisplay = () => {
     return null;
 
   return (
-    <div className="card" style={{ height: 600 }}>
+    <div className="card overflow-x-auto rounded-lg shadow-sm border border-gray-200 bg-white">
       {/* Header */}
       <div className="card-header">
-        <h3 className="text-lg font-semibold">
-          Parsed Claims
-        </h3>
-        <div className="flex items-center space-x-3">
-          <span className="text-sm text-gray-600">
-            {parsedClaims.length} claims
+        <h3>Parsed Claims</h3>
+        <div className="controls">
+          <span>
+            {parsedClaims.length} claim
+            {parsedClaims.length > 1 ? 's' : ''}
           </span>
-          <button
-            onClick={handleClearTable}
-            className="btn btn-outline text-sm"
-          >
+          <button onClick={handleClearTable}>
             Clear All
           </button>
           <button
             onClick={handleSubmitAllClaims}
             disabled={isSubmitting}
-            className="btn btn-primary text-sm flex items-center"
-            style={isSubmitting ? { opacity: 0.7, cursor: 'not-allowed' } : {}}
+            className={`submit-btn ${
+              isSubmitting
+                ? 'cursor-not-allowed opacity-70'
+                : ''
+            }`}
           >
-            {isSubmitting ? (
-              <>
-                <svg
-                  className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <circle
-                    className="opacity-25"
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    strokeWidth="4"
-                  ></circle>
-                  <path
-                    className="opacity-75"
-                    fill="currentColor"
-                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                  ></path>
-                </svg>
-                Submitting...
-              </>
-            ) : (
-              'Submit Claims'
-            )}
+            {isSubmitting
+              ? 'Submitting...'
+              : 'Submit All'}
           </button>
         </div>
       </div>
 
-      {/* Scrollable list of cards */}
-      <div className="h-[520px] overflow-y-auto p-3 space-y-3">
-        {parsedClaims.map((claim, index) => {
-          const isExpanded = isClaimExpanded(
-            claim.claimId || `claim-${index}`
-          );
-
-          return (
-            <div
+      {/* Table */}
+      <table className="claims-table w-full text-sm text-left">
+        <thead>
+          <tr>
+            <th>Claim ID</th>
+            <th>Procedure Codes</th>
+            <th>Modifiers</th>
+            <th>Valid</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {parsedClaims.map((claim, index) => (
+            <tr
               key={
                 claim.claimId || `claim-${index}`
               }
-              className={`p-4 border rounded-md shadow-sm transition-all ${
-                claim.isValid
-                  ? 'bg-white border-gray-200'
-                  : 'bg-red-50 border-red-300'
-              }`}
+              className="hover:bg-gray-50 border-b"
             >
-              {/* Header */}
-              <div className="flex justify-between items-start">
-                <div>
-                  <h4 className="text-lg font-medium">
-                    {claim.claimId ||
-                      'Missing ID'}
-                  </h4>
-                  <p className="text-sm text-gray-600 mt-1">
-                    {claim.patientName
-                      ? `Patient: ${claim.patientName}`
-                      : 'Unknown Patient'}
-                  </p>
-                </div>
-                <div className="flex items-center space-x-2">
-                  {!claim.isValid && (
-                    <span className="badge badge-error">
-                      Invalid
+              <td className="px-4 py-2">
+                {claim.claimId}
+              </td>
+              <td className="px-4 py-2">
+                <div className="flex flex-wrap gap-2">
+                  {claim.procedureCodes?.length >
+                  0 ? (
+                    claim.procedureCodes.map(
+                      (code, i) => (
+                        <span
+                          key={i}
+                          className="badge"
+                        >
+                          {code}
+                        </span>
+                      )
+                    )
+                  ) : (
+                    <span className="text-gray-400">
+                      None
                     </span>
                   )}
-                  <button
-                    onClick={() =>
-                      toggleClaimExpanded(
-                        claim.claimId ||
-                          `claim-${index}`
-                      )
-                    }
-                    className="btn btn-outline text-sm"
-                    style={{ padding: '0.25rem 0.75rem' }}
-                  >
-                    {isExpanded
-                      ? 'Hide'
-                      : 'Details'}
-                  </button>
                 </div>
-              </div>
-
-              {/* Expanded Content */}
-              {isExpanded && (
-                <div className="mt-4 space-y-3 border-t pt-3">
-                  <div>
-                    <p className="text-sm font-semibold text-gray-600 mb-1">
-                      Procedure Codes:
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {claim.procedureCodes
-                        ?.length > 0 ? (
-                        claim.procedureCodes.map(
-                          (code, i) => (
-                            <span
-                              key={i}
-                              className="badge badge-info"
-                            >
-                              {code}
-                            </span>
-                          )
-                        )
-                      ) : (
-                        <p className="text-sm text-gray-500">
-                          None
-                        </p>
-                      )}
-                    </div>
-                  </div>
-
-                  <div>
-                    <p className="text-sm font-semibold text-gray-600 mb-1">
-                      Modifiers:
-                    </p>
-                    <p className="input" style={{ background: '#f3f4f6', padding: '0.5rem 0.75rem', fontSize: '0.95rem' }}>
-                      {formatModifiers(
-                        claim.modifiers
-                      )}
-                    </p>
-                  </div>
-
-                  {!claim.isValid && (
-                    <div>
-                      <p className="text-sm font-semibold text-gray-600 mb-1">
-                        Errors:
-                      </p>
-                      <p className="badge badge-error" style={{ display: 'block', padding: '0.6em 1em', marginTop: '0.3em' }}>
-                        {claim.errors.join(', ')}
-                      </p>
-                    </div>
-                  )}
-
-                  <div className="text-right">
-                    <button
-                      onClick={() =>
-                        handleSubmitClaim(claim)
-                      }
-                      disabled={
-                        !claim.isValid ||
-                        isSubmitting
-                      }
-                      className={`btn btn-primary text-sm ml-auto`}
-                      style={
-                        !claim.isValid || isSubmitting
-                          ? { opacity: 0.7, cursor: 'not-allowed' }
-                          : {}
-                      }
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <svg
-                            className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                          >
-                            <circle
-                              className="opacity-25"
-                              cx="12"
-                              cy="12"
-                              r="10"
-                              stroke="currentColor"
-                              strokeWidth="4"
-                            ></circle>
-                            <path
-                              className="opacity-75"
-                              fill="currentColor"
-                              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                            ></path>
-                          </svg>
-                          Submitting...
-                        </>
-                      ) : (
-                        'Submit Claim'
-                      )}
-                    </button>
-                  </div>
-                </div>
-              )}
-            </div>
-          );
-        })}
-      </div>
+              </td>
+              <td className="px-4 py-2">
+                {formatModifiers(claim.modifiers)}
+              </td>
+              <td className="px-4 py-2">
+                {claim.isValid ? (
+                  <span className="badge badge-success">
+                    Valid
+                  </span>
+                ) : (
+                  <span className="badge badge-error">
+                    Invalid
+                  </span>
+                )}
+              </td>
+              <td className="px-4 py-2">
+                <button
+                  onClick={() =>
+                    handleSubmitClaim(claim)
+                  }
+                  disabled={
+                    !claim.isValid || isSubmitting
+                  }
+                  className={`btn btn-outline text-sm ${
+                    !claim.isValid || isSubmitting
+                      ? 'opacity-50 cursor-not-allowed'
+                      : ''
+                  }`}
+                >
+                  Submit
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };

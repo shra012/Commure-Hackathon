@@ -1,22 +1,22 @@
 .header {
-  width: 100vw;
+  width: 100%;
   background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
   color: white;
   padding: 1.25rem 0;
   font-family: 'Inter', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin: 0;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .header__content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0.75rem;
-  text-align: center;
 }
 
 .header__logo {
@@ -31,15 +31,10 @@
   letter-spacing: 0.03em;
   line-height: 1;
   margin-top: 0.1rem;
-  /* baseline alignment */
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
-  .header__content {
-    flex-direction: row;
-  }
-
   .header__title {
     font-size: 1.25rem;
   }
