@@ -1,4 +1,5 @@
 // src/components/ClaimInput/JSONInput.jsx
+import '../../index.css';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import {
@@ -131,13 +132,13 @@ const JSONInput = () => {
         <div className="space-x-2">
           <button
             onClick={handlePaste}
-            className="bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-md text-sm transition-colors duration-200 flex items-center focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50"
+            className="btn btn-outline"
           >
             Paste
           </button>
           <button
             onClick={clearText}
-            className="bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-md text-sm transition-colors duration-200 flex items-center focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50"
+            className="btn btn-outline"
           >
             Clear
           </button>
@@ -145,7 +146,7 @@ const JSONInput = () => {
       </div>
       <div className="relative">
         <textarea
-          className="w-full h-56 border border-gray-300 rounded-lg p-4 font-mono text-sm bg-gray-50 focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 transition duration-200"
+          className="input textarea"
           placeholder='[{"claim_id": "C1", "codes": ["0001A", "0591T"], "modifier": "1"}]'
           value={jsonText}
           onChange={(e) =>

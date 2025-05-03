@@ -1,5 +1,6 @@
 // src/components/ClaimInput/FileUpload.jsx
 import React, { useState } from 'react';
+import '../../index.css';
 import { useDispatch } from 'react-redux';
 import {
   setParsedClaims,
@@ -143,29 +144,21 @@ const FileUpload = () => {
 
   return (
     <div
-      className={`border-2 border-dashed rounded-xl h-48 flex flex-col items-center justify-center cursor-pointer transition-all duration-300 ${
-        dragActive
-          ? 'border-blue-500 bg-blue-50'
-          : isUploading
-          ? 'border-yellow-400 bg-yellow-50'
-          : fileName
-          ? 'border-green-400 bg-green-50'
-          : 'border-gray-300 hover:border-blue-400 hover:bg-blue-50'
-      }`}
+      className={`upload-zone ${dragActive ? 'active' : isUploading ? 'processing' : fileName ? 'success' : ''}`}
       onDragEnter={handleDrag}
       onDragOver={handleDrag}
       onDragLeave={handleDrag}
       onDrop={handleDrop}
     >
       {isUploading ? (
-        <div className="flex flex-col items-center justify-center">
-          <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-blue-500 mb-3"></div>
+        <div>
+          <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-500 mb-3"></div>
           <p className="text-blue-600 font-medium">
             Processing {fileName}...
           </p>
         </div>
       ) : fileName ? (
-        <div className="flex flex-col items-center justify-center">
+        <div>
           <div className="mb-3 text-green-600"></div>
           <p className="text-green-600 font-medium">
             File processed successfully!
@@ -174,11 +167,11 @@ const FileUpload = () => {
             {fileName}
           </p>
           <button
+            className="btn btn-secondary mt-2 text-sm"
             onClick={(e) => {
               e.stopPropagation();
               setFileName('');
             }}
-            className="mt-2 text-xs text-blue-600 hover:text-blue-800 font-medium"
           >
             Upload another file
           </button>
@@ -187,7 +180,7 @@ const FileUpload = () => {
         <>
           <div className="mb-3 text-blue-500"></div>
           <p className="text-gray-600 mb-2 text-center">
-            Drag & drop a CSV or JSON file here,
+            Drag & drop
             or
             <br />
             click to browse
@@ -195,13 +188,13 @@ const FileUpload = () => {
           <input
             type="file"
             id="file-upload"
-            className="hidden"
+            style={{ display: 'none' }}
             accept=".json,.csv"
             onChange={handleChange}
           />
           <label
             htmlFor="file-upload"
-            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md cursor-pointer transition-colors shadow-sm flex items-center"
+            className="btn btn-primary mt-2"
           >
             Browse Files
           </label>

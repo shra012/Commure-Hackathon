@@ -1,63 +1,44 @@
+import './Footer.css';
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
 
-const Footer = () => {
-  return (
-    <footer className="bg-gray-800 text-white w-full">
-      <div className="max-w-7xl mx-auto py-5 px-4 sm:px-6 lg:px-8">
-        <div className="md:flex md:items-center md:justify-between">
-          <div className="flex justify-center md:justify-start space-x-6">
-            <a
-              href="#"
-              className="text-gray-400 hover:text-gray-300 transition duration-150"
-            >
-              <span className="sr-only">
-                Terms
-              </span>
-              <span className="text-sm">
-                Terms of Service
-              </span>
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-gray-300 transition duration-150"
-            >
-              <span className="sr-only">
-                Privacy
-              </span>
-              <span className="text-sm">
-                Privacy Policy
-              </span>
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-gray-300 transition duration-150"
-            >
-              <span className="sr-only">
-                Support
-              </span>
-              <span className="text-sm">
-                Support
-              </span>
-            </a>
-          </div>
-
-          <div className="mt-4 md:mt-0">
-            <p className="text-center md:text-right text-sm text-gray-400">
-              &copy; 2025 HealthClaim Processor.
-              All rights reserved.
-            </p>
-          </div>
+const Footer = () => (
+  <footer className="footer">
+    <div className="footer__container">
+      <div className="footer__top">
+        <div className="footer__brand">
+          <span className="footer__brand-name">Claims Guardian</span>
         </div>
-
-        <div className="mt-4 border-t border-gray-700 pt-4 flex items-center justify-center">
-          <p className="text-xs text-gray-400">
-            Designed for efficient medical claims
-            processing and validation
-          </p>
+        <div className="footer__links">
+          <a
+            href="https://github.com/shra012/Commure-Hackathon"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__link"
+          >
+            <FaGithub className="footer__link-icon" />
+            <span>GitHub</span>
+          </a>
+          <a
+            href="https://www.healthclaim.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__link"
+          >
+            <span>HealthClaim</span>
+          </a>
         </div>
       </div>
-    </footer>
-  );
-};
+      <div className="footer__bottom">
+        <p className="footer__text">
+          Designed for efficient medical claims processing and validation
+        </p>
+        <p className="footer__copyright">
+          &copy; {new Date().getFullYear()} Claims Guardian. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+);
 
 export default Footer;
