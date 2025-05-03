@@ -137,7 +137,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-08-20",
+    "lastdateofservice": "2023-08-20",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000001",
@@ -265,7 +270,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-07-01",
+    "lastdateofservice": "2023-07-01",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000002",
@@ -405,7 +415,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-06-15",
+    "lastdateofservice": "2023-06-20",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000003",
@@ -545,7 +560,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-09-04",
+    "lastdateofservice": "2023-09-05",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000004",
@@ -673,7 +693,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-10-18",
+    "lastdateofservice": "2023-10-19",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000005",
@@ -813,7 +838,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-12-18",
+    "lastdateofservice": "2023-12-19",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000006",
@@ -980,7 +1010,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-04-26",
+    "lastdateofservice": "2023-04-26",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000007",
@@ -1108,7 +1143,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-12-08",
+    "lastdateofservice": "2023-12-12",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000008",
@@ -1275,7 +1315,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-10-14",
+    "lastdateofservice": "2023-10-14",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000009",
@@ -1403,7 +1448,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-10-27",
+    "lastdateofservice": "2023-10-29",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000010",
@@ -1531,7 +1581,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-06-11",
+    "lastdateofservice": "2023-06-12",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000011",
@@ -1686,7 +1741,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-03-14",
+    "lastdateofservice": "2023-03-19",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000012",
@@ -1814,7 +1874,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-03-15",
+    "lastdateofservice": "2023-03-15",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000013",
@@ -1969,7 +2034,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-06-21",
+    "lastdateofservice": "2023-06-21",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000014",
@@ -2109,10 +2179,15 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-01-28",
+    "lastdateofservice": "2023-02-01",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
-    "claim_id": "1000015",
+    "claim_id": "1000014",
     "response_id": null,
     "status": "pre-submission",
     "outcome": "pending",
@@ -2134,7 +2209,7 @@
     "total_amount": 237.75,
     "raw_claim": {
       "resourceType": "Claim",
-      "id": "1000015",
+      "id": "1000014",
       "meta": {
         "versionId": "1",
         "lastUpdated": "2023-09-28T13:32:19.000+00:00",
@@ -2249,7 +2324,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-02-02",
+    "lastdateofservice": "2023-02-05",
+    "lengthofstay": 4,
+    "billtypecode": "21",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000016",
@@ -2404,7 +2484,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-04-27",
+    "lastdateofservice": "2023-04-28",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000017",
@@ -2544,7 +2629,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-09-22",
+    "lastdateofservice": "2023-09-22",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000018",
@@ -2699,7 +2789,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-10-16",
+    "lastdateofservice": "2023-10-21",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000019",
@@ -2866,7 +2961,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-03-25",
+    "lastdateofservice": "2023-03-25",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000020",
@@ -3006,7 +3106,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-05-01",
+    "lastdateofservice": "2023-05-03",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000021",
@@ -3134,7 +3239,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-06-15",
+    "lastdateofservice": "2023-06-18",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000022",
@@ -3262,7 +3372,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "9"
-    }
+    },
+    "firstdateofservice": "2023-07-16",
+    "lastdateofservice": "2023-07-19",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000023",
@@ -3390,7 +3505,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-03-09",
+    "lastdateofservice": "2023-03-13",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000024",
@@ -3518,7 +3638,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-12-07",
+    "lastdateofservice": "2023-12-12",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000025",
@@ -3658,7 +3783,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-08-08",
+    "lastdateofservice": "2023-08-10",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000026",
@@ -3813,7 +3943,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-07-25",
+    "lastdateofservice": "2023-07-29",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000027",
@@ -3941,7 +4076,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-07-09",
+    "lastdateofservice": "2023-07-09",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000028",
@@ -4108,7 +4248,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-08-28",
+    "lastdateofservice": "2023-08-31",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000029",
@@ -4248,7 +4393,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-12-07",
+    "lastdateofservice": "2023-12-12",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000030",
@@ -4388,7 +4538,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-10-03",
+    "lastdateofservice": "2023-10-06",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000031",
@@ -4555,7 +4710,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-09-16",
+    "lastdateofservice": "2023-09-17",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000032",
@@ -4695,7 +4855,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-02-19",
+    "lastdateofservice": "2023-02-20",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000033",
@@ -4835,7 +5000,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-06-22",
+    "lastdateofservice": "2023-06-23",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000034",
@@ -4963,7 +5133,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-11-24",
+    "lastdateofservice": "2023-11-28",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000035",
@@ -5091,7 +5266,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-12-15",
+    "lastdateofservice": "2023-12-17",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000036",
@@ -5219,7 +5399,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-09-09",
+    "lastdateofservice": "2023-09-09",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000037",
@@ -5347,7 +5532,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-07-05",
+    "lastdateofservice": "2023-07-07",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000038",
@@ -5502,7 +5692,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-05-09",
+    "lastdateofservice": "2023-05-09",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000039",
@@ -5630,7 +5825,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-07-02",
+    "lastdateofservice": "2023-07-07",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000040",
@@ -5770,7 +5970,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-02-03",
+    "lastdateofservice": "2023-02-06",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000041",
@@ -5898,7 +6103,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-11-21",
+    "lastdateofservice": "2023-11-26",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000042",
@@ -6038,7 +6248,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-10-09",
+    "lastdateofservice": "2023-10-13",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000043",
@@ -6178,7 +6393,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-09-04",
+    "lastdateofservice": "2023-09-05",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000044",
@@ -6306,7 +6526,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-02-12",
+    "lastdateofservice": "2023-02-16",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000045",
@@ -6434,7 +6659,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-05-09",
+    "lastdateofservice": "2023-05-09",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000046",
@@ -6562,7 +6792,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-10-18",
+    "lastdateofservice": "2023-10-23",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000047",
@@ -6690,7 +6925,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-08-26",
+    "lastdateofservice": "2023-08-27",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000048",
@@ -6818,7 +7058,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-05-19",
+    "lastdateofservice": "2023-05-24",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000049",
@@ -6985,7 +7230,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-05-04",
+    "lastdateofservice": "2023-05-09",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000050",
@@ -7125,7 +7375,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2022-05-05",
+    "lastdateofservice": "2022-05-05",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000051",
@@ -7253,7 +7508,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-12-28",
+    "lastdateofservice": "2023-12-31",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000052",
@@ -7381,7 +7641,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-07-05",
+    "lastdateofservice": "2023-07-07",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000053",
@@ -7509,7 +7774,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-05-08",
+    "lastdateofservice": "2023-05-08",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000054",
@@ -7664,7 +7934,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-09-09",
+    "lastdateofservice": "2023-09-09",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000055",
@@ -7792,7 +8067,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-05-08",
+    "lastdateofservice": "2023-05-13",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000056",
@@ -7932,7 +8212,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-05-03",
+    "lastdateofservice": "2023-05-08",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000057",
@@ -8072,7 +8357,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-07-09",
+    "lastdateofservice": "2023-07-11",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000058",
@@ -8200,7 +8490,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-12-02",
+    "lastdateofservice": "2023-12-03",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000059",
@@ -8328,7 +8623,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-03-16",
+    "lastdateofservice": "2023-03-17",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000060",
@@ -8456,7 +8756,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-12-24",
+    "lastdateofservice": "2023-12-25",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000061",
@@ -8623,7 +8928,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-07-06",
+    "lastdateofservice": "2023-07-10",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000062",
@@ -8790,7 +9100,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-03-03",
+    "lastdateofservice": "2023-03-07",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000063",
@@ -8918,7 +9233,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-03-18",
+    "lastdateofservice": "2023-03-18",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000064",
@@ -9058,7 +9378,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-07-28",
+    "lastdateofservice": "2023-07-31",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000065",
@@ -9198,7 +9523,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-01-10",
+    "lastdateofservice": "2023-01-14",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000066",
@@ -9353,7 +9683,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-06-14",
+    "lastdateofservice": "2023-06-14",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000067",
@@ -9520,7 +9855,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-05-06",
+    "lastdateofservice": "2023-05-07",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000068",
@@ -9648,7 +9988,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-01-15",
+    "lastdateofservice": "2023-01-17",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000069",
@@ -9788,7 +10133,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-10-02",
+    "lastdateofservice": "2023-10-05",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000070",
@@ -9955,7 +10305,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-03-02",
+    "lastdateofservice": "2023-03-06",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000071",
@@ -10122,7 +10477,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-10-13",
+    "lastdateofservice": "2023-10-14",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000072",
@@ -10262,7 +10622,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-08-07",
+    "lastdateofservice": "2023-08-09",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000073",
@@ -10390,7 +10755,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-06-11",
+    "lastdateofservice": "2023-06-15",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000074",
@@ -10530,7 +10900,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-06-12",
+    "lastdateofservice": "2023-06-17",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000075",
@@ -10670,7 +11045,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-05-11",
+    "lastdateofservice": "2023-05-16",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000076",
@@ -10837,7 +11217,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-08-09",
+    "lastdateofservice": "2023-08-11",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000077",
@@ -10965,7 +11350,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-01-18",
+    "lastdateofservice": "2023-01-21",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000078",
@@ -11105,7 +11495,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-10-23",
+    "lastdateofservice": "2023-10-25",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000079",
@@ -11233,7 +11628,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-09-11",
+    "lastdateofservice": "2023-09-13",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000080",
@@ -11361,7 +11761,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-02-18",
+    "lastdateofservice": "2023-02-18",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000081",
@@ -11489,7 +11894,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-06-19",
+    "lastdateofservice": "2023-06-22",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000082",
@@ -11629,7 +12039,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-05-13",
+    "lastdateofservice": "2023-05-15",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000083",
@@ -11757,7 +12172,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-05-13",
+    "lastdateofservice": "2023-05-15",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000084",
@@ -11912,7 +12332,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-12-02",
+    "lastdateofservice": "2023-12-04",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000085",
@@ -12079,7 +12504,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-07-26",
+    "lastdateofservice": "2023-07-31",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000086",
@@ -12207,7 +12637,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-06-13",
+    "lastdateofservice": "2023-06-17",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000087",
@@ -12347,7 +12782,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-07-15",
+    "lastdateofservice": "2023-07-15",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000088",
@@ -12475,7 +12915,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-09-23",
+    "lastdateofservice": "2023-09-27",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000089",
@@ -12615,7 +13060,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-02-15",
+    "lastdateofservice": "2023-02-19",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000090",
@@ -12782,7 +13232,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-03-19",
+    "lastdateofservice": "2023-03-23",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000091",
@@ -12910,7 +13365,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-08-18",
+    "lastdateofservice": "2023-08-20",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000092",
@@ -13050,7 +13510,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-12-24",
+    "lastdateofservice": "2023-12-27",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000093",
@@ -13205,7 +13670,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-08-09",
+    "lastdateofservice": "2023-08-09",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000094",
@@ -13345,7 +13815,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-01-09",
+    "lastdateofservice": "2023-01-09",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000095",
@@ -13473,7 +13948,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-12-11",
+    "lastdateofservice": "2023-12-11",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000096",
@@ -13613,7 +14093,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-05-16",
+    "lastdateofservice": "2023-05-19",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000097",
@@ -13753,7 +14238,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-03-01",
+    "lastdateofservice": "2023-03-05",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000098",
@@ -13881,7 +14371,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-07-20",
+    "lastdateofservice": "2023-07-21",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000099",
@@ -14021,7 +14516,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-05-12",
+    "lastdateofservice": "2023-05-12",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000100",
@@ -14149,7 +14649,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-06-17",
+    "lastdateofservice": "2023-06-17",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000101",
@@ -14277,7 +14782,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-11-11",
+    "lastdateofservice": "2023-11-16",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000102",
@@ -14405,7 +14915,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-02-25",
+    "lastdateofservice": "2023-02-26",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000103",
@@ -14572,7 +15087,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-11-03",
+    "lastdateofservice": "2023-11-04",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000104",
@@ -14700,7 +15220,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-11-20",
+    "lastdateofservice": "2023-11-23",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000105",
@@ -14828,7 +15353,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-10-17",
+    "lastdateofservice": "2023-10-22",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000106",
@@ -14968,7 +15498,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-08-17",
+    "lastdateofservice": "2023-08-21",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000107",
@@ -15096,7 +15631,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-03-18",
+    "lastdateofservice": "2023-03-22",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000108",
@@ -15224,7 +15764,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-08-08",
+    "lastdateofservice": "2023-08-09",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000109",
@@ -15352,7 +15897,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-10-02",
+    "lastdateofservice": "2023-10-07",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000110",
@@ -15480,7 +16030,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-04-13",
+    "lastdateofservice": "2023-04-15",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000111",
@@ -15635,7 +16190,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "9"
-    }
+    },
+    "firstdateofservice": "2023-09-26",
+    "lastdateofservice": "2023-09-29",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000112",
@@ -15802,7 +16362,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-01-16",
+    "lastdateofservice": "2023-01-17",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000113",
@@ -15942,7 +16507,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-04-16",
+    "lastdateofservice": "2023-04-17",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000114",
@@ -16082,7 +16652,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-12-28",
+    "lastdateofservice": "2023-12-28",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000115",
@@ -16210,7 +16785,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-12-20",
+    "lastdateofservice": "2023-12-22",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000116",
@@ -16350,7 +16930,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-03-26",
+    "lastdateofservice": "2023-03-26",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000117",
@@ -16478,7 +17063,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-04-12",
+    "lastdateofservice": "2023-04-17",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000118",
@@ -16618,7 +17208,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-07-15",
+    "lastdateofservice": "2023-07-20",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000119",
@@ -16746,7 +17341,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-07-14",
+    "lastdateofservice": "2023-07-19",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000120",
@@ -16874,7 +17474,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-09-06",
+    "lastdateofservice": "2023-09-08",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000121",
@@ -17014,7 +17619,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-03-14",
+    "lastdateofservice": "2023-03-14",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000122",
@@ -17154,7 +17764,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-04-10",
+    "lastdateofservice": "2023-04-12",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000123",
@@ -17321,7 +17936,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-05-13",
+    "lastdateofservice": "2023-05-14",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000124",
@@ -17449,7 +18069,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-01-21",
+    "lastdateofservice": "2023-01-25",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000125",
@@ -17589,7 +18214,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-04-25",
+    "lastdateofservice": "2023-04-29",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000126",
@@ -17729,7 +18359,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-08-27",
+    "lastdateofservice": "2023-08-30",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000127",
@@ -17857,7 +18492,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-02-03",
+    "lastdateofservice": "2023-02-03",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000128",
@@ -17997,7 +18637,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-07-21",
+    "lastdateofservice": "2023-07-22",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000129",
@@ -18137,7 +18782,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-05-14",
+    "lastdateofservice": "2023-05-16",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000130",
@@ -18277,7 +18927,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-08-16",
+    "lastdateofservice": "2023-08-16",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000131",
@@ -18432,7 +19087,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-09-19",
+    "lastdateofservice": "2023-09-22",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000132",
@@ -18572,7 +19232,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-12-10",
+    "lastdateofservice": "2023-12-10",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000133",
@@ -18712,7 +19377,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-05-10",
+    "lastdateofservice": "2023-05-11",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000134",
@@ -18852,7 +19522,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-04-06",
+    "lastdateofservice": "2023-04-06",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000135",
@@ -18992,7 +19667,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-03-16",
+    "lastdateofservice": "2023-03-21",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000136",
@@ -19132,7 +19812,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-01-08",
+    "lastdateofservice": "2023-01-10",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000137",
@@ -19260,7 +19945,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-05-19",
+    "lastdateofservice": "2023-05-19",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000138",
@@ -19400,7 +20090,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-08-19",
+    "lastdateofservice": "2023-08-23",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000139",
@@ -19540,7 +20235,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-04-18",
+    "lastdateofservice": "2023-04-21",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000140",
@@ -19680,7 +20380,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-02-09",
+    "lastdateofservice": "2023-02-10",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000141",
@@ -19808,7 +20513,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-04-18",
+    "lastdateofservice": "2023-04-20",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000142",
@@ -19948,7 +20658,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-09-08",
+    "lastdateofservice": "2023-09-11",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000143",
@@ -20088,7 +20803,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-10-21",
+    "lastdateofservice": "2023-10-24",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000144",
@@ -20216,7 +20936,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-05-10",
+    "lastdateofservice": "2023-05-12",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000145",
@@ -20356,7 +21081,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-06-10",
+    "lastdateofservice": "2023-06-11",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000146",
@@ -20484,7 +21214,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-05-22",
+    "lastdateofservice": "2023-05-22",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000147",
@@ -20612,7 +21347,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-04-25",
+    "lastdateofservice": "2023-04-30",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000148",
@@ -20752,7 +21492,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-06-20",
+    "lastdateofservice": "2023-06-22",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000149",
@@ -20880,7 +21625,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-11-10",
+    "lastdateofservice": "2023-11-14",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000150",
@@ -21008,7 +21758,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-07-10",
+    "lastdateofservice": "2023-07-12",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000151",
@@ -21148,7 +21903,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-04-01",
+    "lastdateofservice": "2023-04-04",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000152",
@@ -21276,7 +22036,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-03-13",
+    "lastdateofservice": "2023-03-15",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000153",
@@ -21416,7 +22181,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-05-05",
+    "lastdateofservice": "2023-05-09",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000154",
@@ -21556,7 +22326,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-02-23",
+    "lastdateofservice": "2023-02-25",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000155",
@@ -21696,7 +22471,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-11-24",
+    "lastdateofservice": "2023-11-25",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000156",
@@ -21863,7 +22643,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-10-28",
+    "lastdateofservice": "2023-10-29",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000157",
@@ -22003,7 +22788,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-05-11",
+    "lastdateofservice": "2023-05-13",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000158",
@@ -22170,7 +22960,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-09-18",
+    "lastdateofservice": "2023-09-19",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000159",
@@ -22310,7 +23105,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-11-16",
+    "lastdateofservice": "2023-11-20",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000160",
@@ -22438,7 +23238,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-01-12",
+    "lastdateofservice": "2023-01-12",
+    "lengthofstay": 1,
+    "billtypecode": "32",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000161",
@@ -22566,7 +23371,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-07-26",
+    "lastdateofservice": "2023-07-28",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000162",
@@ -22733,7 +23543,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-06-03",
+    "lastdateofservice": "2023-06-03",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000163",
@@ -22873,7 +23688,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-02-25",
+    "lastdateofservice": "2023-03-01",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000164",
@@ -23013,7 +23833,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-04-16",
+    "lastdateofservice": "2023-04-19",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000165",
@@ -23141,7 +23966,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-02-22",
+    "lastdateofservice": "2023-02-26",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000166",
@@ -23281,7 +24111,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-05-02",
+    "lastdateofservice": "2023-05-07",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000167",
@@ -23436,7 +24271,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-03-09",
+    "lastdateofservice": "2023-03-13",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000168",
@@ -23576,7 +24416,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-02-01",
+    "lastdateofservice": "2023-02-03",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000169",
@@ -23743,7 +24588,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-02-25",
+    "lastdateofservice": "2023-02-26",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000170",
@@ -23883,7 +24733,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-06-12",
+    "lastdateofservice": "2023-06-16",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000171",
@@ -24011,7 +24866,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-10-14",
+    "lastdateofservice": "2023-10-17",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000172",
@@ -24139,7 +24999,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-01-01",
+    "lastdateofservice": "2023-01-06",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000173",
@@ -24267,7 +25132,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-08-01",
+    "lastdateofservice": "2023-08-01",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000174",
@@ -24407,7 +25277,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-10-11",
+    "lastdateofservice": "2023-10-15",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000175",
@@ -24574,7 +25449,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-01-15",
+    "lastdateofservice": "2023-01-15",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000176",
@@ -24714,7 +25594,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-10-07",
+    "lastdateofservice": "2023-10-07",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000177",
@@ -24854,7 +25739,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-12-11",
+    "lastdateofservice": "2023-12-12",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000178",
@@ -24994,7 +25884,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-11-27",
+    "lastdateofservice": "2023-11-30",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000179",
@@ -25122,7 +26017,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-11-16",
+    "lastdateofservice": "2023-11-19",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000180",
@@ -25262,7 +26162,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-10-07",
+    "lastdateofservice": "2023-10-12",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000181",
@@ -25390,7 +26295,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-04-24",
+    "lastdateofservice": "2023-04-24",
+    "lengthofstay": 1,
+    "billtypecode": "21",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000182",
@@ -25557,7 +26467,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-08-07",
+    "lastdateofservice": "2023-08-08",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000183",
@@ -25712,7 +26627,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-03-19",
+    "lastdateofservice": "2023-03-22",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000184",
@@ -25867,7 +26787,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-10-13",
+    "lastdateofservice": "2023-10-16",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000185",
@@ -25995,7 +26920,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-02-15",
+    "lastdateofservice": "2023-02-20",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000186",
@@ -26150,7 +27080,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-01-18",
+    "lastdateofservice": "2023-01-20",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000187",
@@ -26278,7 +27213,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-02-14",
+    "lastdateofservice": "2023-02-19",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000188",
@@ -26445,7 +27385,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-08-16",
+    "lastdateofservice": "2023-08-18",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000189",
@@ -26585,7 +27530,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-01-28",
+    "lastdateofservice": "2023-01-31",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "03"
   },
   {
     "claim_id": "1000190",
@@ -26713,7 +27663,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-04-21",
+    "lastdateofservice": "2023-04-22",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000191",
@@ -26880,7 +27835,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-08-11",
+    "lastdateofservice": "2023-08-13",
+    "lengthofstay": 3,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000192",
@@ -27035,7 +27995,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-07-16",
+    "lastdateofservice": "2023-07-20",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000193",
@@ -27190,7 +28155,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-01-21",
+    "lastdateofservice": "2023-01-24",
+    "lengthofstay": 4,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000194",
@@ -27330,7 +28300,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-10-28",
+    "lastdateofservice": "2023-11-01",
+    "lengthofstay": 5,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000195",
@@ -27458,7 +28433,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-07-27",
+    "lastdateofservice": "2023-07-28",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000196",
@@ -27586,7 +28566,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-05-26",
+    "lastdateofservice": "2023-05-31",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "02"
   },
   {
     "claim_id": "1000197",
@@ -27714,7 +28699,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-07-07",
+    "lastdateofservice": "2023-07-08",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "01"
   },
   {
     "claim_id": "1000198",
@@ -27854,7 +28844,12 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "1"
-    }
+    },
+    "firstdateofservice": "2023-12-07",
+    "lastdateofservice": "2023-12-08",
+    "lengthofstay": 2,
+    "billtypecode": "111",
+    "dischargecode": "06"
   },
   {
     "claim_id": "1000199",
@@ -28009,6 +29004,11 @@
     },
     "ncci_rule_info": {
       "modifier_indicator": "0"
-    }
+    },
+    "firstdateofservice": "2023-08-26",
+    "lastdateofservice": "2023-08-31",
+    "lengthofstay": 6,
+    "billtypecode": "111",
+    "dischargecode": "02"
   }
 ]

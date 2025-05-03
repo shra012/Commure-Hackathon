@@ -1,7 +1,29 @@
 // src/redux/slices/claimSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { processClaimData } from '../../utils/claimProcessor';
-import { validateClaims } from '../../utils/parseHelper';
+import api from '../../utils/api';
+
+// Transform to API format
+const transformToApiFormat = (claims) => {
+    return claims.map(claim => ({
+        claim_id: claim.claimId,
+        codes: claim.procedureCodes,
+        modifier: claim.modifiers && claim.modifiers.length > 0 ? claim.modifiers[0] : "0"
+    }));
+};
+
+export const validateClaimsApi = createAsyncThunk(
+    'claims/validateClaimsApi',
+    async (data, { rejectWithValue }) => {
+        try {
+            const apiFormattedData = transformToApiFormat(data);
+            const response = await api.validateClaims(apiFormattedData);
+            return response;
+        } catch (error) {
+            return rejectWithValue(error.message || 'API validation failed');
+        }
+    }
+);
 
 export const processClaims = createAsyncThunk(
     'claims/processClaims',
@@ -22,15 +44,17 @@ const claimSlice = createSlice({
     initialState: {
         parsedClaims: [],
         processedClaims: [],
+        validationResults: null,
         loading: false,
+        validating: false,
         parseError: null,
-        processError: null
+        processError: null,
+        validationError: null
     },
     reducers: {
         setParsedClaims: (state, action) => {
             try {
-                const validatedClaims = validateClaims(action.payload);
-                state.parsedClaims = validatedClaims;
+                state.parsedClaims = action.payload;
                 state.parseError = null;
             } catch (error) {
                 state.parseError = error.message;
@@ -42,12 +66,15 @@ const claimSlice = createSlice({
         clearClaims: (state) => {
             state.parsedClaims = [];
             state.processedClaims = [];
+            state.validationResults = null;
             state.parseError = null;
             state.processError = null;
+            state.validationError = null;
         }
     },
     extraReducers: (builder) => {
         builder
+            // Process claims cases
             .addCase(processClaims.pending, (state) => {
                 state.loading = true;
                 state.processError = null;
@@ -59,6 +86,20 @@ const claimSlice = createSlice({
             .addCase(processClaims.rejected, (state, action) => {
                 state.processError = action.payload;
                 state.loading = false;
+            })
+
+            // Validate claims API cases
+            .addCase(validateClaimsApi.pending, (state) => {
+                state.validating = true;
+                state.validationError = null;
+            })
+            .addCase(validateClaimsApi.fulfilled, (state, action) => {
+                state.validationResults = action.payload;
+                state.validating = false;
+            })
+            .addCase(validateClaimsApi.rejected, (state, action) => {
+                state.validationError = action.payload;
+                state.validating = false;
             });
     }
 });
