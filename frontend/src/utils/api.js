@@ -7,6 +7,9 @@ const transformToApiFormat = (claims) => {
     return claims.map((claim) => ({
         claim_id: claim.claimId,
         codes: claim.procedureCodes,
+        patient: {
+            reference: claim?.patient?.reference
+        },
         modifier:
             typeof claim.modifiers === 'string'
                 ? claim.modifiers

@@ -5,14 +5,9 @@ import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
 import ClaimInput from './components/ClaimInput/ClaimInput';
 import ClaimResults from './components/ClaimResults/ClaimResults';
-import { useSelector } from 'react-redux';
 import './App.css';
 
 const App = () => {
-  const { parsedClaims = [] } = useSelector(
-    (state) => state.claims
-  );
-
   return (
     <div className="app-container">
       <Header />
