@@ -1,45 +1,141 @@
 // src/components/ClaimInput/ClaimTableDisplay.jsx
-import React from 'react';
+
+import React, { useState } from 'react';
 import {
   useSelector,
   useDispatch,
 } from 'react-redux';
-import {
-  processClaims,
-  clearClaims,
-} from '../../redux/slices/claimSlice';
-import ClaimTableRow from './ClaimTableRow';
+import { clearClaims } from '../../redux/slices/claimSlice';
+import api from '../../utils/api';
 
 const ClaimTableDisplay = () => {
-  const { parsedClaims, parseError, loading } =
+  const { parsedClaims, parseError } =
     useSelector((state) => state.claims);
+  const [expandedClaims, setExpandedClaims] =
+    useState({});
   const dispatch = useDispatch();
 
-  const handleProcessClaims = () => {
-    // Filter out any metadata we added for display purposes
-    const claimsForProcessing = parsedClaims.map(
-      ({ isValid, errors, index, ...claim }) =>
-        claim
-    );
-    dispatch(processClaims(claimsForProcessing));
+  const toggleClaimExpanded = (claimId) => {
+    setExpandedClaims((prev) => ({
+      ...prev,
+      [claimId]: !prev[claimId],
+    }));
+  };
+
+  const isClaimExpanded = (claimId) =>
+    !!expandedClaims[claimId];
+
+  const formatModifiers = (modifiers) => {
+    if (typeof modifiers === 'string')
+      return modifiers === '0'
+        ? 'None'
+        : modifiers;
+    if (
+      Array.isArray(modifiers) &&
+      modifiers.length > 0
+    )
+      return modifiers.join(', ');
+    return 'None';
   };
 
   const handleClearTable = () => {
     dispatch(clearClaims());
+    setExpandedClaims({});
+  };
+
+  const handleSubmitClaim = async (claim) => {
+    try {
+      // Format the data for the single claim API
+      const singleClaimData = {
+        claim_id: claim.claimId,
+        codes: claim.procedureCodes,
+        modifier:
+          typeof claim.modifiers === 'string'
+            ? claim.modifiers
+            : Array.isArray(claim.modifiers) &&
+              claim.modifiers.length > 0
+            ? claim.modifiers[0]
+            : '0',
+      };
+
+      // Use validateSingleClaim for individual submissions
+      const result =
+        await api.validateSingleClaim(
+          singleClaimData
+        );
+      console.log(
+        'Single claim validation result:',
+        result
+      );
+
+      alert(
+        `Claim ${claim.claimId} submitted successfully!`
+      );
+    } catch (error) {
+      alert(
+        `Error submitting claim: ${
+          error.message || 'Unknown error'
+        }`
+      );
+    }
+  };
+
+  const handleSubmitAllClaims = async () => {
+    if (
+      !parsedClaims ||
+      parsedClaims.length === 0
+    ) {
+      alert('No claims to submit.');
+      return;
+    }
+
+    try {
+      const apiData = parsedClaims.map(
+        (claim) => ({
+          claim_id: claim.claimId,
+          codes: claim.procedureCodes,
+          modifier:
+            typeof claim.modifiers === 'string'
+              ? claim.modifiers
+              : Array.isArray(claim.modifiers) &&
+                claim.modifiers.length > 0
+              ? claim.modifiers[0]
+              : '0',
+        })
+      );
+
+      // Continue using validateClaims for batch submissions
+      const result = await api.validateClaims(
+        apiData
+      );
+      console.log(
+        'Batch claims validation result:',
+        result
+      );
+
+      alert('All claims submitted successfully!');
+    } catch (error) {
+      console.error('Submit all failed:', error);
+      alert(
+        `Error submitting claims: ${
+          error.message || 'Unknown error'
+        }`
+      );
+    }
   };
 
   if (parseError) {
     return (
-      <div className="mt-4 p-4 bg-red-50 border border-red-300 rounded">
-        <h3 className="text-lg font-medium text-red-800">
+      <div className="mt-4 p-4 bg-red-100 border border-red-300 rounded">
+        <p className="text-red-700 font-semibold">
           Error Parsing Claims
-        </h3>
-        <p className="text-red-600">
+        </p>
+        <p className="text-red-600 text-sm mt-1">
           {parseError}
         </p>
         <button
           onClick={handleClearTable}
-          className="mt-2 bg-red-100 hover:bg-red-200 text-red-800 py-1 px-3 rounded-md text-sm transition-colors"
+          className="mt-2 px-3 py-1 bg-red-200 hover:bg-red-300 text-red-900 rounded text-sm"
         >
           Clear
         </button>
@@ -47,86 +143,158 @@ const ClaimTableDisplay = () => {
     );
   }
 
-  if (
-    !parsedClaims ||
-    parsedClaims.length === 0
-  ) {
+  if (!parsedClaims || parsedClaims.length === 0)
     return null;
-  }
-
-  const hasInvalidClaims = parsedClaims.some(
-    (claim) => !claim.isValid
-  );
 
   return (
-    <div className="mt-6">
-      <div className="flex justify-between items-center mb-3">
-        <h3 className="text-lg font-medium">
-          Claims Preview
+    <div className="h-[600px] border border-gray-200 rounded-md shadow-inner bg-white">
+      {/* Header */}
+      <div className="flex justify-between items-center p-3 border-b bg-gray-50 sticky top-0 z-10">
+        <h3 className="text-lg font-semibold">
+          Parsed Claims
         </h3>
-        <button
-          onClick={handleClearTable}
-          className="bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded text-sm"
-        >
-          Clear Table
-        </button>
-      </div>
-
-      <div className="overflow-x-auto">
-        <table className="min-w-full bg-white border">
-          <thead>
-            <tr className="bg-gray-100">
-              <th className="border px-4 py-2">
-                Claim ID
-              </th>
-              <th className="border px-4 py-2">
-                Procedure Code
-              </th>
-              <th className="border px-4 py-2">
-                Modifiers
-              </th>
-              <th className="border px-4 py-2">
-                Patient Name
-              </th>
-              <th className="border px-4 py-2">
-                Issues
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {parsedClaims.map((claim) => (
-              <ClaimTableRow
-                key={claim.claimId || claim.index}
-                claim={claim}
-              />
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      {hasInvalidClaims && (
-        <div className="mt-4 p-2 bg-yellow-50 border border-yellow-300 rounded">
-          <p className="text-yellow-700">
-            Some claims have issues that may cause
-            processing problems.
-          </p>
+        <div className="flex items-center space-x-3">
+          <span className="text-sm text-gray-600">
+            {parsedClaims.length} claims
+          </span>
+          <button
+            onClick={handleClearTable}
+            className="text-sm bg-gray-200 hover:bg-gray-300 rounded px-3 py-1"
+          >
+            Clear All
+          </button>
+          <button
+            onClick={handleSubmitAllClaims}
+            className="text-sm bg-blue-500 hover:bg-blue-600 text-white rounded px-3 py-1"
+          >
+            Submit Claims
+          </button>
         </div>
-      )}
+      </div>
 
-      <div className="mt-4 flex space-x-4">
-        <button
-          onClick={handleProcessClaims}
-          disabled={loading}
-          className={`flex-1 ${
-            loading
-              ? 'bg-blue-300'
-              : 'bg-blue-500 hover:bg-blue-600'
-          } text-white py-2 px-4 rounded-md transition-colors`}
-        >
-          {loading
-            ? 'Processing...'
-            : 'Process Claims'}
-        </button>
+      {/* Scrollable list of cards */}
+      <div className="h-[520px] overflow-y-auto p-3 space-y-3">
+        {parsedClaims.map((claim, index) => {
+          const isExpanded = isClaimExpanded(
+            claim.claimId || `claim-${index}`
+          );
+
+          return (
+            <div
+              key={
+                claim.claimId || `claim-${index}`
+              }
+              className={`p-4 border rounded-md shadow-sm transition-all ${
+                claim.isValid
+                  ? 'bg-white border-gray-200'
+                  : 'bg-red-50 border-red-300'
+              }`}
+            >
+              {/* Header */}
+              <div className="flex justify-between items-start">
+                <div>
+                  <h4 className="text-lg font-medium">
+                    {claim.claimId ||
+                      'Missing ID'}
+                  </h4>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {claim.patientName
+                      ? `Patient: ${claim.patientName}`
+                      : 'Unknown Patient'}
+                  </p>
+                </div>
+                <div className="flex items-center space-x-2">
+                  {!claim.isValid && (
+                    <span className="text-xs bg-red-100 text-red-800 px-2 py-0.5 rounded">
+                      Invalid
+                    </span>
+                  )}
+                  <button
+                    onClick={() =>
+                      toggleClaimExpanded(
+                        claim.claimId ||
+                          `claim-${index}`
+                      )
+                    }
+                    className="text-sm text-blue-600 hover:underline"
+                  >
+                    {isExpanded
+                      ? 'Hide'
+                      : 'Details'}
+                  </button>
+                </div>
+              </div>
+
+              {/* Expanded Content */}
+              {isExpanded && (
+                <div className="mt-4 space-y-3 border-t pt-3">
+                  <div>
+                    <p className="text-sm font-semibold text-gray-600 mb-1">
+                      Procedure Codes:
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {claim.procedureCodes
+                        ?.length > 0 ? (
+                        claim.procedureCodes.map(
+                          (code, i) => (
+                            <span
+                              key={i}
+                              className="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                            >
+                              {code}
+                            </span>
+                          )
+                        )
+                      ) : (
+                        <p className="text-sm text-gray-500">
+                          None
+                        </p>
+                      )}
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="text-sm font-semibold text-gray-600 mb-1">
+                      Modifiers:
+                    </p>
+                    <p className="text-sm bg-gray-100 rounded p-2">
+                      {formatModifiers(
+                        claim.modifiers
+                      )}
+                    </p>
+                  </div>
+
+                  {!claim.isValid && (
+                    <div>
+                      <p className="text-sm font-semibold text-gray-600 mb-1">
+                        Errors:
+                      </p>
+                      <p className="text-sm text-red-700 bg-red-100 p-2 rounded">
+                        {claim.errors.join(', ')}
+                      </p>
+                    </div>
+                  )}
+
+                  <div className="text-right">
+                    <button
+                      onClick={() =>
+                        handleSubmitClaim(claim)
+                      }
+                      disabled={!claim.isValid}
+                      className={`px-4 py-2 text-sm rounded-md font-medium ${
+                        claim.isValid
+                          ? 'bg-green-500 hover:bg-green-600 text-white'
+                          : 'bg-gray-300 text-gray-600 cursor-not-allowed'
+                      }`}
+                    >
+                      Submit Claim
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
