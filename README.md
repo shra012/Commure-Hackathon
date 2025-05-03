@@ -4,6 +4,8 @@
 
 ClaimsGuard.ai is a React-based web application designed to streamline the process of validating medical claim codes. The application allows users to input claim data in JSON format, parse and validate the claims, and receive instant feedback on the validation results.
 
+![Workflow Diagram](docs/workflow.png)
+
 ## Features
 
 - **JSON Input**: Enter claim data directly in JSON format with syntax highlighting
