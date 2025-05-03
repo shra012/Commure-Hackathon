@@ -133,7 +133,12 @@
 
 .section-header svg {
   margin-right: 0.5rem;
-  color: #3b82f6;
+  color: inherit;
+}
+
+/* Icon sizing */
+:root {
+  --icon-size: 0.25rem;
 }
 
 /* Empty states */
@@ -158,4 +163,9 @@
   color: #6b7280;
   font-size: 0.875rem;
   text-align: center;
+}
+.icon {
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  flex-shrink: 0;
 }
