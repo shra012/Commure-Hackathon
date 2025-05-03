@@ -70,6 +70,12 @@ const claimSlice = createSlice({
             state.parseError = null;
             state.processError = null;
             state.validationError = null;
+        },
+        // New reducer to manually set validation results (for testing purposes)
+        setValidationResults: (state, action) => {
+            state.validationResults = action.payload;
+            state.validating = false;
+            state.validationError = null;
         }
     },
     extraReducers: (builder) => {
@@ -104,5 +110,5 @@ const claimSlice = createSlice({
     }
 });
 
-export const { setParsedClaims, setParseError, clearClaims } = claimSlice.actions;
+export const { setParsedClaims, setParseError, clearClaims, setValidationResults } = claimSlice.actions;
 export default claimSlice.reducer;

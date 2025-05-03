@@ -54,6 +54,28 @@ const api = {
                 }
             );
 
+            console.log('API response data:', response.data);
+
+            // Ensure the response has the expected structure
+            if (!response.data.claims) {
+                // If the API returns a different structure, transform it to match expected format
+                if (Array.isArray(response.data)) {
+                    return { claims: response.data };
+                } else {
+                    // Create a default structure
+                    return {
+                        claims: [
+                            {
+                                claim_id: "Unknown",
+                                approved: false,
+                                results: [],
+                                summary: "Invalid API response format"
+                            }
+                        ]
+                    };
+                }
+            }
+
             return response.data;
         } catch (error) {
             return handleApiError(error);
@@ -79,6 +101,22 @@ const api = {
                     },
                 }
             );
+
+            console.log('Single claim API response:', response.data);
+
+            // For single claims, wrap in the expected format if necessary
+            if (!response.data.claims) {
+                return {
+                    claims: [
+                        {
+                            claim_id: dataToSend.claim_id || "Unknown",
+                            approved: response.data.approved || false,
+                            results: response.data.results || [],
+                            summary: response.data.summary || "No validation summary available"
+                        }
+                    ]
+                };
+            }
 
             return response.data;
         } catch (error) {

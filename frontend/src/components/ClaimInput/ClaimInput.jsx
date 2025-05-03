@@ -3,6 +3,7 @@
 import React from 'react';
 import JSONInput from './JSONInput';
 import FileUpload from './FileUpload';
+import TestValidationButton from './TestValidationButton';
 
 const ClaimInput = () => {
   return (
@@ -35,6 +36,14 @@ const ClaimInput = () => {
         </div>
 
         <JSONInput />
+
+        {/* Test Button for Development */}
+        <div className="mt-6 pt-4 border-t border-gray-200">
+          <p className="text-xs text-gray-500 mb-2">
+            Development Tools
+          </p>
+          <TestValidationButton />
+        </div>
       </div>
     </div>
   );

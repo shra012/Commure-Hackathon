@@ -5,11 +5,13 @@ import {
   setParsedClaims,
   setParseError,
   validateClaimsApi,
+  setValidationResults,
 } from '../../redux/slices/claimSlice';
 import {
   parseCSV,
   validateClaims,
 } from '../../utils/parseHelper';
+import api from '../../utils/api';
 
 const FileUpload = () => {
   const [dragActive, setDragActive] =
@@ -51,6 +53,21 @@ const FileUpload = () => {
     }
   };
 
+  // Helper function to transform to API format
+  const transformToApiFormat = (claims) => {
+    return claims.map((claim) => ({
+      claim_id: claim.claimId,
+      codes: claim.procedureCodes,
+      modifier:
+        claim.modifiers &&
+        claim.modifiers.length > 0
+          ? typeof claim.modifiers === 'string'
+            ? claim.modifiers
+            : claim.modifiers[0]
+          : '0',
+    }));
+  };
+
   const handleFile = (file) => {
     const fileType = file.type;
     const reader = new FileReader();
@@ -77,13 +94,41 @@ const FileUpload = () => {
         // Set validated data in store
         dispatch(setParsedClaims(validatedData));
 
-        // Also send to API if needed
-        dispatch(
-          validateClaimsApi(validatedData)
+        // Prepare API formatted data
+        const apiFormattedData =
+          transformToApiFormat(validatedData);
+        console.log(
+          'Sending to API:',
+          apiFormattedData
         );
+
+        try {
+          // Call API directly instead of using thunk
+          const response =
+            await api.validateClaims(
+              apiFormattedData
+            );
+          console.log('API Response:', response);
+
+          // Manually set validation results
+          dispatch(
+            setValidationResults(response)
+          );
+        } catch (apiError) {
+          console.error('API Error:', apiError);
+          dispatch(
+            setParseError(
+              `API Error: ${apiError.message}`
+            )
+          );
+        }
 
         setIsUploading(false);
       } catch (error) {
+        console.error(
+          'File processing error:',
+          error
+        );
         setIsUploading(false);
         dispatch(
           setParseError(
@@ -121,8 +166,7 @@ const FileUpload = () => {
         </div>
       ) : fileName ? (
         <div className="flex flex-col items-center justify-center">
-          <div className="mb-3 text-green-600">
-          </div>
+          <div className="mb-3 text-green-600"></div>
           <p className="text-green-600 font-medium">
             File processed successfully!
           </p>
@@ -141,8 +185,7 @@ const FileUpload = () => {
         </div>
       ) : (
         <>
-          <div className="mb-3 text-blue-500">
-          </div>
+          <div className="mb-3 text-blue-500"></div>
           <p className="text-gray-600 mb-2 text-center">
             Drag & drop a CSV or JSON file here,
             or

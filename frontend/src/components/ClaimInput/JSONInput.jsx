@@ -4,11 +4,13 @@ import { useDispatch } from 'react-redux';
 import {
   setParsedClaims,
   setParseError,
+  setValidationResults,
 } from '../../redux/slices/claimSlice';
 import {
   parseJSON,
   validateClaims,
 } from '../../utils/parseHelper';
+import api from '../../utils/api';
 
 const JSONInput = () => {
   const [jsonText, setJsonText] = useState('');
@@ -18,7 +20,22 @@ const JSONInput = () => {
     useState(false);
   const dispatch = useDispatch();
 
-  const handleParse = () => {
+  // Helper function to transform to API format
+  const transformToApiFormat = (claims) => {
+    return claims.map((claim) => ({
+      claim_id: claim.claimId,
+      codes: claim.procedureCodes,
+      modifier:
+        claim.modifiers &&
+        claim.modifiers.length > 0
+          ? typeof claim.modifiers === 'string'
+            ? claim.modifiers
+            : claim.modifiers[0]
+          : '0',
+    }));
+  };
+
+  const handleParse = async () => {
     try {
       if (!jsonText.trim()) {
         dispatch(
@@ -42,6 +59,33 @@ const JSONInput = () => {
 
       // Set parsed claims in Redux store
       dispatch(setParsedClaims(validatedData));
+
+      // Prepare API formatted data
+      const apiFormattedData =
+        transformToApiFormat(validatedData);
+      console.log(
+        'Sending to API:',
+        apiFormattedData
+      );
+
+      try {
+        // Call API directly instead of using thunk
+        const response = await api.validateClaims(
+          apiFormattedData
+        );
+        console.log('API Response:', response);
+
+        // Manually set validation results
+        dispatch(setValidationResults(response));
+      } catch (apiError) {
+        console.error('API Error:', apiError);
+        dispatch(
+          setParseError(
+            `API Error: ${apiError.message}`
+          )
+        );
+      }
+
       setIsProcessing(false);
       setHasProcessed(true);
 
@@ -130,17 +174,11 @@ const JSONInput = () => {
         }`}
       >
         {isProcessing ? (
-          <>
-            Processing...
-          </>
+          <>Processing...</>
         ) : hasProcessed ? (
-          <>
-            Processed Successfully
-          </>
+          <>Processed Successfully</>
         ) : (
-          <>
-            Parse Claims
-          </>
+          <>Parse Claims</>
         )}
       </button>
     </div>
