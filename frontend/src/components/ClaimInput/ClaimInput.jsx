@@ -23,7 +23,6 @@ const ClaimInput = () => {
           </div>
         </div>
       </div>
-      <ClaimTableDisplay/>
     </div>
   );
 };
