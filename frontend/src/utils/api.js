@@ -1,7 +1,7 @@
 // src/utils/api.js
 import axios from 'axios';
 
-const API_BASE_URL = 'http://commure.shra012.com:8080'; // Updated with correct port 8000
+const API_BASE_URL = 'http://commure.shra012.com'; // Updated with correct port 8000
 
 // Helper function to transform data to API format
 const transformToApiFormat = (claims) => {

@@ -8,7 +8,7 @@ export default defineConfig({
     proxy: {
       // Set up a proxy for the API requests
       '/api': {
-        target: 'http://commure.shra012.com:8080',
+        target: 'http://commure.shra012.com',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }
