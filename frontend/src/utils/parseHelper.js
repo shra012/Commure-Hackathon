@@ -97,7 +97,9 @@ export const validateClaims = (claims) => {
             claimId: claim.claim_id || `Unknown-${index}`,
             procedureCodes: procedureCodes,
             modifiers: modifier, 
-            patientName: claim.patientName || claim.patient_name || "Unknown",
+            patient: {
+                reference: claim?.patient?.reference
+            },
             isValid: errors.length === 0,
             errors
         };

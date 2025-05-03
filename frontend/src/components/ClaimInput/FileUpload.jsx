@@ -59,6 +59,9 @@ const FileUpload = () => {
     return claims.map((claim) => ({
       claim_id: claim.claimId,
       codes: claim.procedureCodes,
+       patient: {
+            reference: claim?.patient?.reference
+        },
       modifier:
         claim.modifiers &&
         claim.modifiers.length > 0

@@ -4,6 +4,7 @@ import axios from 'axios';
 const API_BASE_URL = 'https://commure.shra012.com'; // Updated with correct port 8000
 
 const transformToApiFormat = (claims) => {
+    print(claims)
     return claims.map((claim) => ({
         claim_id: claim.claimId,
         codes: claim.procedureCodes,
@@ -24,6 +25,9 @@ const transformSingleClaimToApiFormat = (claim) => {
     return {
         claim_id: claim.claimId,
         codes: claim.procedureCodes,
+        patient: {
+            reference: claim?.patient?.reference
+        },
         modifier:
             typeof claim.modifiers === 'string'
                 ? claim.modifiers

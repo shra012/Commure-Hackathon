@@ -40,6 +40,9 @@ const ClaimTableDisplay = () => {
       const data = {
         claim_id: claim.claimId,
         codes: claim.procedureCodes,
+        patient: {
+            reference: claim?.patient?.reference
+        },
         modifier: formatModifiers(
           claim.modifiers
         ),
@@ -68,6 +71,9 @@ const ClaimTableDisplay = () => {
         (claim) => ({
           claim_id: claim.claimId,
           codes: claim.procedureCodes,
+          patient: {
+            reference: claim?.patient?.reference
+          },
           modifier: formatModifiers(
             claim.modifiers
           ),
@@ -145,7 +151,7 @@ const ClaimTableDisplay = () => {
         <thead>
           <tr>
             <th>Claim ID</th>
-            <th>Procedure Codes</th>
+            <th>Codes</th>
             <th>Modifiers</th>
             <th>Valid</th>
             <th>Action</th>
