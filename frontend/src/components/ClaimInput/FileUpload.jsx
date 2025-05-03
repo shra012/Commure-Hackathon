@@ -1,4 +1,4 @@
-// src/components/ClaimInput/FileUpload.jsx
+
 import React, { useState } from 'react';
 import '../../index.css';
 import { useDispatch } from 'react-redux';
@@ -54,7 +54,7 @@ const FileUpload = () => {
     }
   };
 
-  // Helper function to transform to API format
+
   const transformToApiFormat = (claims) => {
     return claims.map((claim) => ({
       claim_id: claim.claimId,
@@ -88,14 +88,14 @@ const FileUpload = () => {
           );
         }
 
-        // Use the validateClaims helper function for consistent validation
+
         const validatedData =
           validateClaims(data);
 
-        // Set validated data in store
+
         dispatch(setParsedClaims(validatedData));
 
-        // Prepare API formatted data
+
         const apiFormattedData =
           transformToApiFormat(validatedData);
         console.log(
@@ -104,14 +104,14 @@ const FileUpload = () => {
         );
 
         try {
-          // Call API directly instead of using thunk
+
           const response =
             await api.validateClaims(
               apiFormattedData
             );
           console.log('API Response:', response);
 
-          // Manually set validation results
+
           dispatch(
             setValidationResults(response)
           );

@@ -1,11 +1,11 @@
-// Mock claim processor function - would connect to backend in real app
+
 export const processClaimData = (data) => {
-    // Simulate processing time
+
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             try {
                 const processedClaims = data.map(claim => {
-                    // Generate random status for demonstration
+
                     const statuses = ['Approved', 'Denied', 'Pending Review', 'Needs Information'];
                     const randomStatus = statuses[Math.floor(Math.random() * statuses.length)];
 
@@ -25,7 +25,7 @@ export const processClaimData = (data) => {
     });
 };
 
-// Helper function to generate notes based on status
+
 export const getStatusNotes = (status) => {
     switch (status) {
         case 'Approved':

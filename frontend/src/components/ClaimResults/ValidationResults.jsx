@@ -4,7 +4,7 @@ import ValidationResultsCard from './ValidationResultsCard';
 import { useSelector } from 'react-redux';
 
 const ValidationResults = () => {
-  // Get validation results from Redux store
+
   const {
     validationResults = null,
     validating = false,

@@ -1,9 +1,9 @@
-// src/utils/api.js
+
 import axios from 'axios';
 
-const API_BASE_URL = 'http://commure.shra012.com:8080'; // Updated with correct port 8000
+const API_BASE_URL = 'http://commure.shra012.com:8080'; 
 
-// Helper function to transform data to API format
+
 const transformToApiFormat = (claims) => {
     return claims.map((claim) => ({
         claim_id: claim.claimId,
@@ -17,7 +17,7 @@ const transformToApiFormat = (claims) => {
     }));
 };
 
-// Helper function to transform a single claim to API format
+
 const transformSingleClaimToApiFormat = (claim) => {
     return {
         claim_id: claim.claimId,
@@ -32,7 +32,7 @@ const transformSingleClaimToApiFormat = (claim) => {
 };
 
 const api = {
-    // Method to validate a batch of claims
+
     validateClaims: async (claimsData) => {
         try {
             const dataToSend =
@@ -56,13 +56,13 @@ const api = {
 
             console.log('API response data:', response.data);
 
-            // Ensure the response has the expected structure
+
             if (!response.data.claims) {
-                // If the API returns a different structure, transform it to match expected format
+
                 if (Array.isArray(response.data)) {
                     return { claims: response.data };
                 } else {
-                    // Create a default structure
+
                     return {
                         claims: [
                             {
@@ -82,10 +82,10 @@ const api = {
         }
     },
 
-    // New method to validate a single claim
+
     validateSingleClaim: async (claimData) => {
         try {
-            // Check if we need to transform the data
+
             const dataToSend = claimData.claimId !== undefined
                 ? transformSingleClaimToApiFormat(claimData)
                 : claimData;
@@ -104,7 +104,7 @@ const api = {
 
             console.log('Single claim API response:', response.data);
 
-            // For single claims, wrap in the expected format if necessary
+
             if (!response.data.claims) {
                 return {
                     claims: [
@@ -125,7 +125,7 @@ const api = {
     }
 };
 
-// Helper function to handle API errors consistently
+
 function handleApiError(error) {
     if (
         error.message &&

@@ -491,13 +491,13 @@
     transition: all 0.3s ease;
 }
 
-/* Fix to ensure expanded content is visible */
+
 .validation-detail-section {
     opacity: 1 !important;
     display: block !important;
 }
 
-/* Animation for collapse/expand */
+
 @keyframes expandSection {
     from {
         max-height: 0;

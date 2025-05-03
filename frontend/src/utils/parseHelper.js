@@ -1,6 +1,6 @@
 import Papa from 'papaparse';
 
-// Parse JSON data
+
 export const parseJSON = (jsonString) => {
     try {
         return JSON.parse(jsonString);
@@ -9,7 +9,7 @@ export const parseJSON = (jsonString) => {
     }
 };
 
-// Parse CSV data
+
 export const parseCSV = (file) => {
     return new Promise((resolve, reject) => {
         Papa.parse(file, {
@@ -30,7 +30,7 @@ export const parseCSV = (file) => {
     });
 };
 
-// Unified validation function to handle different input formats
+
 export const validateClaims = (claims) => {
     if (!Array.isArray(claims)) {
         throw new Error("Claims data must be an array");
@@ -40,15 +40,15 @@ export const validateClaims = (claims) => {
     const validatedClaims = claims.map((claim, index) => {
         const errors = [];
 
-        // Check for required fields
+
         if (!claim.claim_id) {
             errors.push("Missing claim ID");
         }
 
-        // Extract procedure codes into a consistent format
+
         let procedureCodes = [];
 
-        // Handle different possible formats of procedure codes
+
         if (claim.procedure_codes) {
             procedureCodes = Array.isArray(claim.procedure_codes)
                 ? claim.procedure_codes
@@ -72,19 +72,19 @@ export const validateClaims = (claims) => {
             }
         }
 
-        // If no procedure codes were found, add an error
+
         if (procedureCodes.length === 0) {
             errors.push("Missing procedure codes");
         }
 
-        // Extract modifier (support both string and array formats)
+
         let modifier;
         if (claim.modifier !== undefined) {
-            // Keep modifier as a string if it's already a string
+
             modifier = claim.modifier;
         }
         else if (claim.modifiers) {
-            // If modifiers is an array, convert to string (first element)
+
             modifier = Array.isArray(claim.modifiers) && claim.modifiers.length > 0
                 ? claim.modifiers[0]
                 : (typeof claim.modifiers === 'string' ? claim.modifiers : "0");
@@ -92,11 +92,11 @@ export const validateClaims = (claims) => {
             modifier = "0";
         }
 
-        // Create the simplified structure
+
         const simplifiedClaim = {
             claimId: claim.claim_id || `Unknown-${index}`,
             procedureCodes: procedureCodes,
-            modifiers: modifier, // Now this is a string
+            modifiers: modifier, 
             patientName: claim.patientName || claim.patient_name || "Unknown",
             isValid: errors.length === 0,
             errors

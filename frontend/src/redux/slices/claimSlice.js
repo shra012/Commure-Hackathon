@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { processClaimData } from '../../utils/claimProcessor';
 import api from '../../utils/api';
 
-// Transform to API format
+
 const transformToApiFormat = (claims) => {
     return claims.map(claim => ({
         claim_id: claim.claimId,

@@ -21,7 +21,7 @@ const JSONInput = () => {
     useState(false);
   const dispatch = useDispatch();
 
-  // Helper function to transform to API format
+
   const transformToApiFormat = (claims) => {
     return claims.map((claim) => ({
       claim_id: claim.claimId,
@@ -102,7 +102,7 @@ const JSONInput = () => {
 
   return (
     <div className="mt-6 px-4 pl-6 input-text-box">
-      {/* Header row with label and buttons */}
+
       <div className="json-header-row">
         <h3 className="section-description">
           Paste JSON Claims Data
@@ -123,7 +123,7 @@ const JSONInput = () => {
         </div>
       </div>
 
-      {/* Textarea for JSON input */}
+
       <div className="relative">
         <textarea
           className="input textarea"
@@ -145,7 +145,7 @@ const JSONInput = () => {
         )}
       </div>
 
-      {/* Parse button */}
+
       <button
         onClick={handleParse}
         disabled={

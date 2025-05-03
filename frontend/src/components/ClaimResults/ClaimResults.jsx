@@ -1,4 +1,4 @@
-// src/components/ClaimResults/ClaimResults.jsx
+
 import React, {
   useState,
   useEffect,
@@ -6,13 +6,13 @@ import React, {
 import ClaimCard from './ClaimCard';
 import ValidationResults from './ValidationResults';
 import { useSelector } from 'react-redux';
-import './ClaimResults.css'; // Import the CSS file
+import './ClaimResults.css'; 
 
 const ClaimResults = () => {
   const [activeTab, setActiveTab] =
-    useState('processed'); // 'processed' or 'validation'
+    useState('processed'); 
 
-  // Destructure with default values to prevent undefined errors
+
   const {
     processedClaims = [],
     loading = false,
@@ -26,7 +26,7 @@ const ClaimResults = () => {
     validationResults.claims &&
     validationResults.claims.length > 0;
 
-  // Debug logging for component state
+
   useEffect(() => {
     console.log('ClaimResults Component State:', {
       activeTab,
@@ -46,7 +46,7 @@ const ClaimResults = () => {
     hasValidationResults,
   ]);
 
-  // Auto-switch to validation tab when validation results are available
+
   useEffect(() => {
     if (hasValidationResults) {
       console.log(
@@ -86,7 +86,7 @@ const ClaimResults = () => {
     );
   }
 
-  // If no results of any kind
+
   if (
     (!processedClaims ||
       processedClaims.length === 0) &&
@@ -125,7 +125,7 @@ const ClaimResults = () => {
 
   return (
     <div className="claims-container">
-      {/* Tabs */}
+
       <div className="claims-tabs">
       
         <button
@@ -147,7 +147,7 @@ const ClaimResults = () => {
         </button>
       </div>
 
-      {/* Content area - Keep both views mounted but only show the active one */}
+
       <div className="claims-content">
        
 

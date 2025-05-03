@@ -7,7 +7,7 @@ import React, {
 const ClaimCard = ({ claim }) => {
   const [expanded, setExpanded] = useState(false);
 
-  // Debug logging for component state
+
   useEffect(() => {
     console.log(
       `ClaimCard for ${claim?.claimId} - expanded state: ${expanded}`
@@ -16,7 +16,7 @@ const ClaimCard = ({ claim }) => {
 
   if (!claim) return null;
 
-  // Create a specific toggle function for debugging
+
   const toggleExpand = () => {
     console.log(
       `Toggling expanded from ${expanded} to ${!expanded} for claim ${
@@ -26,7 +26,7 @@ const ClaimCard = ({ claim }) => {
     setExpanded((prevState) => !prevState);
   };
 
-  // Map status to class names and styles
+
   const getStatusClassNames = (status) => {
     switch (status) {
       case 'Approved':
@@ -160,7 +160,7 @@ const ClaimCard = ({ claim }) => {
         </div>
       )}
 
-      {/* Procedure codes section - always visible */}
+
       <div className="mt-4 pt-3 border-t border-gray-100">
         <p className="text-gray-500 text-xs uppercase font-semibold mb-2">
           Procedure Codes
@@ -186,7 +186,7 @@ const ClaimCard = ({ claim }) => {
         </div>
       </div>
 
-      {/* Action buttons */}
+
       <div className="validation-card-actions">
         <button className="action-button action-secondary">
           Edit
