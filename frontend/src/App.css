@@ -58,10 +58,14 @@
 
 /* Validated claims scrollable area (entire right column) */
 .validated-claims-scroll {
-  flex: 1;
-  overflow-y: auto;
   background-color: #f9fafb;
   padding: 1.5rem;
+  overflow-y: visible;
+  /* ← disables internal scrolling */
+  height: auto;
+  /* ← allows content to expand */
+  flex: none;
+  /* ← disables equal-height behavior */
 }
 
 /* Custom scrollbars */

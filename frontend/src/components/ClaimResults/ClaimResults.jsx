@@ -5,15 +5,12 @@ import React, {
 } from 'react';
 import ClaimCard from './ClaimCard';
 import ValidationResults from './ValidationResults';
-import {
-  useSelector,
-  useDispatch,
-} from 'react-redux';
+import { useSelector } from 'react-redux';
+import './ClaimResults.css'; // Import the CSS file
 
 const ClaimResults = () => {
   const [activeTab, setActiveTab] =
     useState('processed'); // 'processed' or 'validation'
-  const dispatch = useDispatch();
 
   // Destructure with default values to prevent undefined errors
   const {
@@ -29,28 +26,42 @@ const ClaimResults = () => {
     validationResults.claims &&
     validationResults.claims.length > 0;
 
-  // Log state for debugging
-  console.log('Redux State in ClaimResults:', {
+  // Debug logging for component state
+  useEffect(() => {
+    console.log('ClaimResults Component State:', {
+      activeTab,
+      processedClaims: processedClaims.length,
+      validationResults: hasValidationResults
+        ? validationResults.claims.length
+        : 0,
+      loading,
+      validating,
+    });
+  }, [
+    activeTab,
     processedClaims,
     validationResults,
     loading,
     validating,
     hasValidationResults,
-  });
+  ]);
 
   // Auto-switch to validation tab when validation results are available
   useEffect(() => {
     if (hasValidationResults) {
+      console.log(
+        'Auto-switching to validation tab due to results'
+      );
       setActiveTab('validation');
     }
   }, [hasValidationResults]);
 
   if (loading || validating) {
     return (
-      <div className="flex justify-center items-center h-full p-6">
-        <div className="flex flex-col items-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mb-4"></div>
-          <p className="text-gray-600">
+      <div className="claims-container">
+        <div className="claims-loading">
+          <div className="claims-spinner"></div>
+          <p className="claims-loading-text">
             {loading
               ? 'Processing claims...'
               : 'Validating claims...'}
@@ -62,14 +73,14 @@ const ClaimResults = () => {
 
   if (processError) {
     return (
-      <div className="p-6">
-        <div className="bg-red-50 border-l-4 border-red-500 text-red-700 p-5 rounded-md shadow-sm">
-          <div className="flex items-center mb-2">
-            <p className="font-bold">
-              Error Processing Claims
-            </p>
+      <div className="claims-container">
+        <div className="claims-error">
+          <div className="claims-error-title">
+            Error Processing Claims
           </div>
-          <p>{processError}</p>
+          <p className="claims-error-message">
+            {processError}
+          </p>
         </div>
       </div>
     );
@@ -82,98 +93,75 @@ const ClaimResults = () => {
     !hasValidationResults
   ) {
     return (
-      <div className="flex flex-col items-center justify-center h-full p-6 text-center">
-        <div className="rounded-full bg-gray-100 p-6 mb-4"></div>
-        <p className="text-xl text-gray-500 font-medium">
-          No Claims Processed Yet
-        </p>
-        <p className="mt-2 text-gray-500 max-w-sm">
-          Submit claims using the form on the left
-          to see results here.
-        </p>
+      <div className="claims-container">
+        <div className="claims-empty">
+          <div className="claims-empty-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-8 w-8 text-gray-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
+            </svg>
+          </div>
+          <p className="claims-empty-title">
+            No Claims Processed Yet
+          </p>
+          <p className="claims-empty-description">
+            Submit claims using the form on the
+            left to see results here.
+          </p>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="p-6 h-full flex flex-col">
+    <div className="claims-container">
       {/* Tabs */}
-      <div className="flex border-b border-gray-200 mb-6">
-        <button
-          onClick={() =>
-            setActiveTab('processed')
-          }
-          className={`py-3 px-6 font-medium text-sm focus:outline-none 
-            ${
-              activeTab === 'processed'
-                ? 'border-b-2 border-blue-500 text-blue-600'
-                : 'text-gray-500 hover:text-gray-700'
-            }`}
-        >
-          Processed Claims
-          {processedClaims.length > 0 && (
-            <span className="ml-2 bg-gray-100 text-gray-700 py-0.5 px-2 rounded-full text-xs">
-              {processedClaims.length}
-            </span>
-          )}
-        </button>
+      <div className="claims-tabs">
+      
         <button
           onClick={() =>
             setActiveTab('validation')
           }
-          className={`py-3 px-6 font-medium text-sm focus:outline-none
-            ${
-              activeTab === 'validation'
-                ? 'border-b-2 border-blue-500 text-blue-600'
-                : 'text-gray-500 hover:text-gray-700'
-            }`}
+          className={`claims-tab ${
+            activeTab === 'validation'
+              ? 'active'
+              : ''
+          }`}
         >
           Validation Results
           {hasValidationResults && (
-            <span className="ml-2 bg-gray-100 text-gray-700 py-0.5 px-2 rounded-full text-xs">
+            <span className="claims-tab-badge">
               {validationResults.claims.length}
             </span>
           )}
         </button>
       </div>
 
-      {/* Content area */}
-      <div className="flex-1 overflow-hidden">
-        {activeTab === 'processed' ? (
-          <div className="h-full overflow-y-auto">
-            {processedClaims.length > 0 ? (
-              <div className="space-y-5 pb-6">
-                {processedClaims.map(
-                  (claim, index) => (
-                    <div
-                      key={claim.claimId || index}
-                      className="fadeIn"
-                      style={{
-                        animationDelay: `${
-                          index * 0.05
-                        }s`,
-                      }}
-                    >
-                      <ClaimCard claim={claim} />
-                    </div>
-                  )
-                )}
-              </div>
-            ) : (
-              <div className="flex flex-col items-center justify-center h-full p-6 text-center">
-                <p className="text-xl text-gray-500 font-medium">
-                  No Processed Claims Yet
-                </p>
-                <p className="mt-2 text-gray-500 max-w-sm">
-                  Submit and process claims to see
-                  results here.
-                </p>
-              </div>
-            )}
-          </div>
-        ) : (
+      {/* Content area - Keep both views mounted but only show the active one */}
+      <div className="claims-content">
+       
+
+        <div
+          className="h-full"
+          style={{
+            display:
+              activeTab === 'validation'
+                ? 'block'
+                : 'none',
+          }}
+        >
           <ValidationResults />
-        )}
+        </div>
       </div>
     </div>
   );

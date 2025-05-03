@@ -1,5 +1,5 @@
 // src/components/ClaimResults/ValidationResults.jsx
-import React, { useEffect } from 'react';
+import React from 'react';
 import ValidationResultsCard from './ValidationResultsCard';
 import { useSelector } from 'react-redux';
 
@@ -11,48 +11,26 @@ const ValidationResults = () => {
     validationError = null,
   } = useSelector((state) => state.claims || {});
 
-  // Debug logging
-  useEffect(() => {
-    console.log('Validation Results Component:', {
-      validationResults,
-      validating,
-      validationError,
-      hasResults: !!(
-        validationResults &&
-        validationResults.claims &&
-        validationResults.claims.length > 0
-      ),
-    });
-  }, [
-    validationResults,
-    validating,
-    validationError,
-  ]);
-
   if (validating) {
     return (
-      <div className="flex justify-center items-center h-full p-6">
-        <div className="flex flex-col items-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mb-4"></div>
-          <p className="text-gray-600">
-            Validating claims...
-          </p>
-        </div>
+      <div className="claims-loading">
+        <div className="claims-spinner"></div>
+        <p className="claims-loading-text">
+          Validating claims...
+        </p>
       </div>
     );
   }
 
   if (validationError) {
     return (
-      <div className="p-6">
-        <div className="bg-red-50 border-l-4 border-red-500 text-red-700 p-5 rounded-md shadow-sm">
-          <div className="flex items-center mb-2">
-            <p className="font-bold">
-              Error Validating Claims
-            </p>
-          </div>
-          <p>{validationError}</p>
+      <div className="claims-error">
+        <div className="claims-error-title">
+          Error Validating Claims
         </div>
+        <p className="claims-error-message">
+          {validationError}
+        </p>
       </div>
     );
   }
@@ -64,29 +42,30 @@ const ValidationResults = () => {
     validationResults.claims.length === 0
   ) {
     return (
-      <div className="flex flex-col items-center justify-center h-full p-6 text-center">
-        <div className="rounded-full bg-gray-100 p-6 mb-4"></div>
-        <p className="text-xl text-gray-500 font-medium">
+      <div className="claims-empty">
+        <div className="claims-empty-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8 text-gray-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+            />
+          </svg>
+        </div>
+        <p className="claims-empty-title">
           No Validation Results Yet
         </p>
-        <p className="mt-2 text-gray-500 max-w-sm">
+        <p className="claims-empty-description">
           Submit claims using the form on the left
           to see validation results here.
         </p>
-        {validationResults && (
-          <div className="mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded-md text-left max-w-md">
-            <p className="text-sm text-yellow-800 font-medium">
-              Debug Info:
-            </p>
-            <pre className="text-xs text-yellow-700 mt-2 bg-yellow-100 p-2 rounded overflow-auto max-h-32">
-              {JSON.stringify(
-                validationResults,
-                null,
-                2
-              )}
-            </pre>
-          </div>
-        )}
       </div>
     );
   }
@@ -102,55 +81,37 @@ const ValidationResults = () => {
     totalClaims - approvedClaims;
 
   return (
-    <div className="p-6 h-full overflow-y-auto">
-      <div className="flex items-center mb-6 sticky top-0 bg-white p-3 z-10 border-b border-gray-200 rounded-lg shadow-sm">
-        <h2 className="text-lg font-bold text-gray-800">
-          Validation Results
-          <span className="ml-2 text-sm font-normal text-gray-500 bg-gray-100 px-2 py-0.5 rounded-full">
-            {validationResults.claims.length}
-          </span>
-        </h2>
-      </div>
-
-      {/* Stats summary */}
-      <div className="grid grid-cols-3 gap-4 mb-6">
-        <div className="bg-white rounded-lg shadow-sm p-4 border border-gray-200">
-          <p className="text-sm text-gray-500 mb-1">
+    <div className="claims-scroll-area">
+      <div className="validation-stats">
+        <div className="stat-card total-card">
+          <p className="stat-label">
             Total Claims
           </p>
-          <p className="text-2xl font-bold">
+          <p className="stat-value stat-total">
             {totalClaims}
           </p>
         </div>
-        <div className="bg-white rounded-lg shadow-sm p-4 border border-green-200">
-          <p className="text-sm text-gray-500 mb-1">
-            Approved
-          </p>
-          <p className="text-2xl font-bold text-green-600">
+        <div className="stat-card approved-card">
+          <p className="stat-label">Approved</p>
+          <p className="stat-value stat-approved">
             {approvedClaims}
           </p>
         </div>
-        <div className="bg-white rounded-lg shadow-sm p-4 border border-red-200">
-          <p className="text-sm text-gray-500 mb-1">
-            Rejected
-          </p>
-          <p className="text-2xl font-bold text-red-600">
+        <div className="stat-card rejected-card">
+          <p className="stat-label">Partially Approved</p>
+          <p className="stat-value stat-rejected">
             {rejectedClaims}
           </p>
         </div>
       </div>
 
-      <div className="space-y-5 pb-6">
+      <div className="claims-cards">
         {validationResults.claims.map(
           (claim, index) => (
             <div
-              key={claim.claim_id || index}
-              className="fadeIn"
-              style={{
-                animationDelay: `${
-                  index * 0.05
-                }s`,
-              }}
+              key={`claim-${
+                claim.claim_id || index
+              }`}
             >
               <ValidationResultsCard
                 claim={claim}
