@@ -1,0 +1,1002 @@
+[
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "0591T",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0591T can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "0592T",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0592T can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "0593T",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0593T can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "90473",
+        "modifier_allowed": false,
+        "modifier_indicator": "9",
+        "rule_text": "CPT 90473 is bundled into 0001A and will be denied if billed together.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "96160",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 96160 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "96161",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 96161 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99202",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99202 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99203",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99203 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99204",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99204 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99205",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99205 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99211",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99211 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99212",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99212 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99213",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99213 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99214",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99214 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99215",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99215 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99241",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99241 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99242",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99242 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99243",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99243 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99244",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99244 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99245",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99245 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99281",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99281 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99282",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99282 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99283",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99283 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99284",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99284 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99285",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99285 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99381",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99381 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99382",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99382 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99383",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99383 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99384",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99384 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99385",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99385 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99386",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99386 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99387",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99387 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99391",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99391 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99392",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99392 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99393",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99393 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99394",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99394 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99395",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99395 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99396",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99396 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99397",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99397 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99401",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99401 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99402",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99402 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99403",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99403 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99404",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99404 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99406",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99406 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99407",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99407 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99408",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99408 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99409",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99409 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99411",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99411 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99412",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99412 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99483",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99483 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "99497",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 99497 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "G0008",
+        "modifier_allowed": false,
+        "modifier_indicator": "9",
+        "rule_text": "CPT G0008 is bundled into 0001A and will be denied if billed together.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "G0009",
+        "modifier_allowed": false,
+        "modifier_indicator": "9",
+        "rule_text": "CPT G0009 is bundled into 0001A and will be denied if billed together.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "G0010",
+        "modifier_allowed": false,
+        "modifier_indicator": "9",
+        "rule_text": "CPT G0010 is bundled into 0001A and will be denied if billed together.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "G0442",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT G0442 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "G0443",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT G0443 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "G0444",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT G0444 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "G0445",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT G0445 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001A",
+        "code2": "G0463",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT G0463 can be billed with 0001A only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001M",
+        "code2": "80050",
+        "modifier_allowed": false,
+        "modifier_indicator": "0",
+        "rule_text": "CPT 80050 is bundled into 0001M and will be denied if billed together.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001M",
+        "code2": "80053",
+        "modifier_allowed": false,
+        "modifier_indicator": "0",
+        "rule_text": "CPT 80053 is bundled into 0001M and will be denied if billed together.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001M",
+        "code2": "80076",
+        "modifier_allowed": false,
+        "modifier_indicator": "0",
+        "rule_text": "CPT 80076 is bundled into 0001M and will be denied if billed together.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001M",
+        "code2": "80500",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 80500 can be billed with 0001M only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001M",
+        "code2": "80502",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 80502 can be billed with 0001M only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001M",
+        "code2": "82172",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 82172 can be billed with 0001M only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001M",
+        "code2": "82247",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 82247 can be billed with 0001M only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001M",
+        "code2": "82977",
+        "modifier_allowed": false,
+        "modifier_indicator": "0",
+        "rule_text": "CPT 82977 is bundled into 0001M and will be denied if billed together.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001M",
+        "code2": "83010",
+        "modifier_allowed": false,
+        "modifier_indicator": "0",
+        "rule_text": "CPT 83010 is bundled into 0001M and will be denied if billed together.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001M",
+        "code2": "84460",
+        "modifier_allowed": false,
+        "modifier_indicator": "0",
+        "rule_text": "CPT 84460 is bundled into 0001M and will be denied if billed together.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001T",
+        "code2": "0002T",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0002T can be billed with 0001T only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001T",
+        "code2": "34800",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 34800 can be billed with 0001T only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001T",
+        "code2": "34802",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 34802 can be billed with 0001T only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001T",
+        "code2": "34804",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 34804 can be billed with 0001T only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001T",
+        "code2": "36000",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 36000 can be billed with 0001T only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001T",
+        "code2": "36410",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 36410 can be billed with 0001T only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0028U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0028U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0029U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0029U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0030U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0030U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0034U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0034U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0046U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0046U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0049U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0049U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0053U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0053U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0070U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0070U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0071U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0071U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0086U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0086U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0111U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0111U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0128U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0128U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0136U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0136U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0137U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0137U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0138U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0138U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0140U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0140U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0141U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0141U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0142U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0142U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0155U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0155U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0156U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0156U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0157U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0157U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0158U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0158U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0159U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0159U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0160U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0160U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    },
+    {
+        "type": "PTP",
+        "code1": "0001U",
+        "code2": "0161U",
+        "modifier_allowed": true,
+        "modifier_indicator": "1",
+        "rule_text": "CPT 0161U can be billed with 0001U only when an appropriate anatomical modifier is present.",
+        "source_file": "ccioph-v311r0-f1.xlsx",
+        "source_sheet": "ccioph-v311r0-f1"
+    }
+]
