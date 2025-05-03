@@ -145,6 +145,6 @@ After validation, the system will display results indicating whether each claim 
 [MIT License](LICENSE)
 
 ## Contact
-Product Lead  - Shreyas durairajalu - Shreyasdurairajalu@gmail.com
-Lead FrontEnd Engineer - Suryakangeyan - suryakangeyankg@gmail.com
-Lead BackEnd Engineer - ShravanKumar - shravankumar.nagarajan@gmail.com
+- Product Lead  - Shreyas durairajalu - Shreyasdurairajalu@gmail.com
+- Lead FrontEnd Engineer - Suryakangeyan - suryakangeyankg@gmail.com
+- Lead BackEnd Engineer - ShravanKumar - shravankumar.nagarajan@gmail.com
