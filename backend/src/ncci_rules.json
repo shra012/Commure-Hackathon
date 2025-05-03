@@ -139,6 +139,106 @@
     "source_file": "cc ioph-v311r0-f1.xlsx",
     "source_sheet": "ccioph-v311r0-f1"
   },
+   {
+    "type": "PTP",
+    "code1": "0001A",
+    "code2": "G0445",
+    "modifier_allowed": true,
+    "modifier_indicator": "1",
+    "rule_text": "CPT G0445 can be billed with 0001A when modifier 1 is used.",
+    "source_file": "cc ioph-v311r0-f1.xlsx",
+    "source_sheet": "ccioph-v311r0-f1"
+  },
+  {
+    "type": "PTP",
+    "code1": "0001A",
+    "code2": "G0463",
+    "modifier_allowed": true,
+    "modifier_indicator": "1",
+    "rule_text": "CPT G0463 can be billed with 0001A when modifier 1 is used.",
+    "source_file": "cc ioph-v311r0-f1.xlsx",
+    "source_sheet": "ccioph-v311r0-f1"
+  },
+  {
+    "type": "PTP",
+    "code1": "0001M",
+    "code2": "80050",
+    "modifier_allowed": false,
+    "modifier_indicator": "0",
+    "rule_text": "CPT 0001M cannot be billed together with 80050.",
+    "source_file": "cc ioph-v311r0-f1.xlsx",
+    "source_sheet": "ccioph-v311r0-f1"
+  },
+  {
+    "type": "PTP",
+    "code1": "0001M",
+    "code2": "80053",
+    "modifier_allowed": false,
+    "modifier_indicator": "0",
+    "rule_text": "CPT 0001M cannot be billed together with 80053.",
+    "source_file": "cc ioph-v311r0-f1.xlsx",
+    "source_sheet": "ccioph-v311r0-f1"
+  },
+  {
+    "type": "PTP",
+    "code1": "0001M",
+    "code2": "80076",
+    "modifier_allowed": false,
+    "modifier_indicator": "0",
+    "rule_text": "CPT 0001M cannot be billed together with 80076.",
+    "source_file": "cc ioph-v311r0-f1.xlsx",
+    "source_sheet": "ccioph-v311r0-f1"
+  },
+  {
+    "type": "PTP",
+    "code1": "0001M",
+    "code2": "80500",
+    "modifier_allowed": true,
+    "modifier_indicator": "1",
+    "rule_text": "CPT 80500 can be billed with 0001M when modifier 1 is used.",
+    "source_file": "cc ioph-v311r0-f1.xlsx",
+    "source_sheet": "ccioph-v311r0-f1"
+  },
+  {
+    "type": "PTP",
+    "code1": "0001M",
+    "code2": "80502",
+    "modifier_allowed": true,
+    "modifier_indicator": "1",
+    "rule_text": "CPT 80502 can be billed with 0001M when modifier 1 is used.",
+    "source_file": "cc ioph-v311r0-f1.xlsx",
+    "source_sheet": "ccioph-v311r0-f1"
+  },
+  {
+    "type": "PTP",
+    "code1": "0001M",
+    "code2": "82172",
+    "modifier_allowed": true,
+    "modifier_indicator": "1",
+    "rule_text": "CPT 82172 can be billed with 0001M when modifier 1 is used.",
+    "source_file": "cc ioph-v311r0-f1.xlsx",
+    "source_sheet": "ccioph-v311r0-f1"
+  },
+  {
+    "type": "PTP",
+    "code1": "0001M",
+    "code2": "82247",
+    "modifier_allowed": true,
+    "modifier_indicator": "1",
+    "rule_text": "CPT 82247 can be billed with 0001M when modifier 1 is used.",
+    "source_file": "cc ioph-v311r0-f1.xlsx",
+    "source_sheet": "ccioph-v311r0-f1"
+  },
+  {
+    "type": "PTP",
+    "code1": "0001M",
+    "code2": "82977",
+    "modifier_allowed": false,
+    "modifier_indicator": "0",
+    "rule_text": "CPT 0001M cannot be billed together with 82977.",
+    "source_file": "cc ioph-v311r0-f1.xlsx",
+    "source_sheet": "ccioph-v311r0-f1"
+  },
   {
     "type": "PTP",
     "code1": "0001A",
