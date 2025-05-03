@@ -167,11 +167,11 @@ const FileUpload = () => {
             {fileName}
           </p>
           <button
-            className="btn btn-secondary mt-2 text-sm"
             onClick={(e) => {
               e.stopPropagation();
               setFileName('');
             }}
+            style={{ marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-primary)', background: 'none', border: 'none', cursor: 'pointer', fontWeight: 500 }}
           >
             Upload another file
           </button>
@@ -194,7 +194,8 @@ const FileUpload = () => {
           />
           <label
             htmlFor="file-upload"
-            className="btn btn-primary mt-2"
+            className="btn btn-primary"
+            style={{ cursor: 'pointer', marginTop: '0.5rem' }}
           >
             Browse Files
           </label>

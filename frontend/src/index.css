@@ -202,6 +202,19 @@
 
 /* Custom styles */
 
+/* Section titles and descriptions */
+.section-title {
+  padding-left: var(--spacing-md);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.section-description {
+  padding-left: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
 @layer base {
     body {
         @apply bg-gray-50 text-gray-900 antialiased;
