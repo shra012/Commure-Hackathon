@@ -1,4 +1,5 @@
 // src/components/ClaimInput/TestValidationButton.jsx
+import '../../index.css';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { setValidationResults } from '../../redux/slices/claimSlice';
@@ -71,7 +72,7 @@ const TestValidationButton = () => {
   return (
     <button
       onClick={loadTestData}
-      className="mt-4 w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200 flex items-center justify-center"
+      className="btn btn-primary w-full mt-4"
     >
       Load Test Validation Results
     </button>

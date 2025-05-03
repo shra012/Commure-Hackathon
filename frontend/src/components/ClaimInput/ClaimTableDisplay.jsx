@@ -1,4 +1,5 @@
 // src/components/ClaimInput/ClaimTableDisplay.jsx
+import '../../index.css';
 
 import React, { useState } from 'react';
 import {
@@ -166,7 +167,7 @@ const ClaimTableDisplay = () => {
         </p>
         <button
           onClick={handleClearTable}
-          className="mt-2 px-3 py-1 bg-red-200 hover:bg-red-300 text-red-900 rounded text-sm"
+          className="btn btn-outline mt-2 text-sm"
         >
           Clear
         </button>
@@ -178,9 +179,9 @@ const ClaimTableDisplay = () => {
     return null;
 
   return (
-    <div className="h-[600px] border border-gray-200 rounded-md shadow-inner bg-white">
+    <div className="card" style={{ height: 600 }}>
       {/* Header */}
-      <div className="flex justify-between items-center p-3 border-b bg-gray-50 sticky top-0 z-10">
+      <div className="card-header">
         <h3 className="text-lg font-semibold">
           Parsed Claims
         </h3>
@@ -190,18 +191,15 @@ const ClaimTableDisplay = () => {
           </span>
           <button
             onClick={handleClearTable}
-            className="text-sm bg-gray-200 hover:bg-gray-300 rounded px-3 py-1"
+            className="btn btn-outline text-sm"
           >
             Clear All
           </button>
           <button
             onClick={handleSubmitAllClaims}
             disabled={isSubmitting}
-            className={`text-sm ${
-              isSubmitting
-                ? 'bg-gray-400 cursor-not-allowed'
-                : 'bg-blue-500 hover:bg-blue-600'
-            } text-white rounded px-3 py-1 flex items-center`}
+            className="btn btn-primary text-sm flex items-center"
+            style={isSubmitting ? { opacity: 0.7, cursor: 'not-allowed' } : {}}
           >
             {isSubmitting ? (
               <>
@@ -267,7 +265,7 @@ const ClaimTableDisplay = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   {!claim.isValid && (
-                    <span className="text-xs bg-red-100 text-red-800 px-2 py-0.5 rounded">
+                    <span className="badge badge-error">
                       Invalid
                     </span>
                   )}
@@ -278,7 +276,8 @@ const ClaimTableDisplay = () => {
                           `claim-${index}`
                       )
                     }
-                    className="text-sm text-blue-600 hover:underline"
+                    className="btn btn-outline text-sm"
+                    style={{ padding: '0.25rem 0.75rem' }}
                   >
                     {isExpanded
                       ? 'Hide'
@@ -301,7 +300,7 @@ const ClaimTableDisplay = () => {
                           (code, i) => (
                             <span
                               key={i}
-                              className="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
+                              className="badge badge-info"
                             >
                               {code}
                             </span>
@@ -319,7 +318,7 @@ const ClaimTableDisplay = () => {
                     <p className="text-sm font-semibold text-gray-600 mb-1">
                       Modifiers:
                     </p>
-                    <p className="text-sm bg-gray-100 rounded p-2">
+                    <p className="input" style={{ background: '#f3f4f6', padding: '0.5rem 0.75rem', fontSize: '0.95rem' }}>
                       {formatModifiers(
                         claim.modifiers
                       )}
@@ -331,7 +330,7 @@ const ClaimTableDisplay = () => {
                       <p className="text-sm font-semibold text-gray-600 mb-1">
                         Errors:
                       </p>
-                      <p className="text-sm text-red-700 bg-red-100 p-2 rounded">
+                      <p className="badge badge-error" style={{ display: 'block', padding: '0.6em 1em', marginTop: '0.3em' }}>
                         {claim.errors.join(', ')}
                       </p>
                     </div>
@@ -346,12 +345,12 @@ const ClaimTableDisplay = () => {
                         !claim.isValid ||
                         isSubmitting
                       }
-                      className={`px-4 py-2 text-sm rounded-md font-medium flex items-center ml-auto ${
-                        !claim.isValid ||
-                        isSubmitting
-                          ? 'bg-gray-300 text-gray-600 cursor-not-allowed'
-                          : 'bg-green-500 hover:bg-green-600 text-white'
-                      }`}
+                      className={`btn btn-primary text-sm ml-auto`}
+                      style={
+                        !claim.isValid || isSubmitting
+                          ? { opacity: 0.7, cursor: 'not-allowed' }
+                          : {}
+                      }
                     >
                       {isSubmitting ? (
                         <>
