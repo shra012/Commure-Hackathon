@@ -2,7 +2,7 @@ import React from 'react';
 import '../../index.css';
 import JSONInput from './JSONInput';
 import FileUpload from './FileUpload';
-import TestValidationButton from './TestValidationButton';
+// import TestValidationButton from './TestValidationButton';
 import ClaimTableDisplay from './ClaimTableDisplay';
 
 const ClaimInput = () => {
