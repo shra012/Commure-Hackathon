@@ -1,6 +1,6 @@
 # ClaimsGuard.ai
 
-This ![project](https://devpost.com/software/claimguardians) was developed and presented for ![Commure Codes](https://commure-codes.devpost.com/) 
+This [project](https://devpost.com/software/claimguardians) was developed and presented for [Commure Codes](https://commure-codes.devpost.com/) 
 
 ## Overview
 
